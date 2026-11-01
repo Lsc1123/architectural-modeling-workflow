@@ -1,0 +1,194 @@
+[
+  {
+    "region": "P01",
+    "function": "下沉庭院",
+    "historical_locator": {
+      "path": [
+        "R05_整体精修",
+        "01_建筑",
+        "面层",
+        "P01_完成面"
+      ],
+      "persistent_id": 449711
+    },
+    "native_matches": [
+      "root/448348/449674/449709/449711"
+    ]
+  },
+  {
+    "region": "P02",
+    "function": "下沉客厅／临时客卧",
+    "historical_locator": {
+      "path": [
+        "R05_整体精修",
+        "01_建筑",
+        "面层",
+        "P02_完成面"
+      ],
+      "persistent_id": 449792
+    },
+    "native_matches": [
+      "root/448348/449674/449709/449792"
+    ]
+  },
+  {
+    "region": "P03",
+    "function": "洗衣与无淋浴客卫",
+    "historical_locator": {
+      "path": [
+        "R05_整体精修",
+        "01_建筑",
+        "面层",
+        "P03_完成面"
+      ],
+      "persistent_id": 449872
+    },
+    "native_matches": [
+      "root/448348/449674/449709/449872"
+    ]
+  },
+  {
+    "region": "P04",
+    "function": "场地入口",
+    "historical_locator": {
+      "path": [
+        "R05_整体精修",
+        "01_建筑",
+        "面层",
+        "P04_完成面"
+      ],
+      "persistent_id": 450012
+    },
+    "native_matches": [
+      "root/448348/449674/449709/450012"
+    ]
+  },
+  {
+    "region": "P05",
+    "function": "厨房餐区",
+    "historical_locator": {
+      "path": [
+        "R05_整体精修",
+        "01_建筑",
+        "面层",
+        "P05_完成面"
+      ],
+      "persistent_id": 450218
+    },
+    "native_matches": [
+      "root/448348/449674/449709/450218"
+    ]
+  },
+  {
+    "region": "P06",
+    "function": "后庭灰空间",
+    "historical_locator": {
+      "path": [
+        "R05_整体精修",
+        "01_建筑",
+        "面层",
+        "P06_完成面"
+      ],
+      "persistent_id": 450370
+    },
+    "native_matches": [
+      "root/448348/449674/449709/450370"
+    ]
+  },
+  {
+    "region": "P07",
+    "function": "休闲露台",
+    "historical_locator": {
+      "path": [
+        "R05_整体精修",
+        "01_建筑",
+        "面层",
+        "P07_完成面"
+      ],
+      "persistent_id": 450488
+    },
+    "native_matches": [
+      "root/448348/449674/449709/450488"
+    ]
+  },
+  {
+    "region": "P08",
+    "function": "唯一主卧套间（含主卫）",
+    "historical_locator": {
+      "path": [
+        "R05_整体精修",
+        "01_建筑",
+        "面层",
+        "P08_完成面"
+      ],
+      "persistent_id": 450580
+    },
+    "native_matches": [
+      "root/448348/449674/449709/450580"
+    ]
+  },
+  {
+    "region": "P09",
+    "function": "会客露台",
+    "historical_locator": {
+      "path": [
+        "R05_整体精修",
+        "01_建筑",
+        "面层",
+        "P09_完成面"
+      ],
+      "persistent_id": 450696
+    },
+    "native_matches": [
+      "root/448348/449674/449709/450696"
+    ]
+  },
+  {
+    "region": "P10",
+    "function": "独立书房",
+    "historical_locator": {
+      "path": [
+        "R05_整体精修",
+        "01_建筑",
+        "面层",
+        "P10_完成面"
+      ],
+      "persistent_id": 450800
+    },
+    "native_matches": [
+      "root/448348/449674/449709/450800"
+    ]
+  },
+  {
+    "region": "P11",
+    "function": "上层露台",
+    "historical_locator": {
+      "path": [
+        "R05_整体精修",
+        "01_建筑",
+        "面层",
+        "P11_完成面"
+      ],
+      "persistent_id": 450904
+    },
+    "native_matches": [
+      "root/448348/449674/449709/450904"
+    ]
+  },
+  {
+    "region": "P12",
+    "function": "不上人屋面",
+    "historical_locator": {
+      "path": [
+        "R05_整体精修",
+        "01_建筑",
+        "面层",
+        "P12_完成面"
+      ],
+      "persistent_id": 450984
+    },
+    "native_matches": [
+      "root/448348/449674/449709/450984"
+    ]
+  }
+]

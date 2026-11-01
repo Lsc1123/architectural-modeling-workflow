@@ -1,0 +1,276 @@
+{
+  "audit": {
+    "accessible_historical_chats": 43,
+    "deduplicated_turns": 347,
+    "user_feedback_occurrences": 573,
+    "text_unique_feedback": 489,
+    "occurrences_with_same_turn_located_candidates": 417,
+    "limits": "Accessible records only; fork deduplication by turn ID. A located candidate or AI completion statement is not repair proof. Missing attachments remain gaps. Raw chats stay private."
+  },
+  "cases": [
+    {
+      "id": "C01",
+      "feedback_summary": "探索阶段过早定功能或堆砌方案",
+      "cause_inference": "空间联系尚未确认就生成交通，会固化错误前提。",
+      "revision_rule": "按问题比较少量候选，视线与可走分开；选案后才推进精度。",
+      "verification_scope": "旧候选无法逐个重建空间效果；当前反馈仅证明需要先对齐可达面。",
+      "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
+      "historical_artifacts": [
+        {
+          "project_relative_path": "项目上下文/PlanE事实底表.json",
+          "sha256": "2d37a55661e48f07e29ab30bf0f802fd0627d4559245ca30c7e43c8320a422a2",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        },
+        {
+          "project_relative_path": "Tools/skills/architectural-modeling-workflow/references/workflow.md",
+          "sha256": "4f77b2ac85a0a00d250414c3ec0a604119876b1cb05664bc240da6177748f335",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        }
+      ]
+    },
+    {
+      "id": "C02",
+      "feedback_summary": "区域身份与功能混淆",
+      "cause_inference": "旧聊天或编号顺序被误当当前事实。",
+      "revision_rule": "单一底表、版本内功能与原生定位；语义改变替代旧行。",
+      "verification_scope": "当前上下文检查通过；设计合理性不由脚本认证。",
+      "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
+      "historical_artifacts": [
+        {
+          "project_relative_path": "项目上下文/PlanE事实底表.json",
+          "sha256": "2d37a55661e48f07e29ab30bf0f802fd0627d4559245ca30c7e43c8320a422a2",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        },
+        {
+          "project_relative_path": "Tools/check_project_context.py",
+          "sha256": "06207f6abc9cc70a52944b3392952ffc5bb22306cd5ccb8a416e8c13fe29e8c5",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        }
+      ]
+    },
+    {
+      "id": "C03",
+      "feedback_summary": "用户手改需要保全",
+      "cause_inference": "旧生成器或磁盘副本可能覆盖窗口里的新工作。",
+      "revision_rule": "实时文档身份、未保存状态、CAS修订、事务快照及范围比较。",
+      "verification_scope": "历史窗口时点无法在本轮重现；原生导出与回退文件可定位。",
+      "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
+      "historical_artifacts": [
+        {
+          "project_relative_path": "成果/1026-PlanE错层护栏恢复_R09/内部回退/Split_原生几何.json",
+          "sha256": "1f2f5c62f927bbe5df13450f14ca6c6d8881f899b819001c15e67296be021dcc",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        },
+        {
+          "project_relative_path": "成果/1026-PlanE错层护栏恢复_R09/工具/write_native.py",
+          "sha256": "7bad93b5dc09f7406b5c81cc250dc628c9cc5bc40f551655b68125ed558f81d1",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        }
+      ]
+    },
+    {
+      "id": "C04",
+      "feedback_summary": "片拼模型不能正常编辑",
+      "cause_inference": "按面碎片组织而不是可用原生构件。",
+      "revision_rule": "真实原生面环、组内编辑、撤销及保存重开独立验收。",
+      "verification_scope": "历史记录列体积编辑/恢复和保存；本轮另有真实SU样件，不能把网格封闭当UI通过。",
+      "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
+      "historical_artifacts": [
+        {
+          "project_relative_path": "成果/1026-PlanE错层护栏恢复_R09/核查/Split_原生核查.json",
+          "sha256": "5ef2c7b72886c7096e1c29d9f5dac3488ff7152845427522c30b01a39bb67378",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        },
+        {
+          "project_relative_path": "成果/1026-PlanE错层护栏恢复_R09/工具/native_finish.rb",
+          "sha256": "d7a4ec2a1b08b521a4f5087d0540142b24c06b9d84e86c73157d04f5410cae60",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        }
+      ]
+    },
+    {
+      "id": "C05",
+      "feedback_summary": "楼板及完成面接口",
+      "cause_inference": "净空切削误侵入承托面，拆梯未同步恢复板与面层。",
+      "revision_rule": "板底、板顶、面层、梯口、旧槽、门槛联合检查，实际轮廓来自模型。",
+      "verification_scope": "当前12区回归通过；缺少旧版完整附件的反馈保留缺口。",
+      "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
+      "historical_artifacts": [
+        {
+          "project_relative_path": "项目上下文/楼板接口核查基准.json",
+          "sha256": "074f3b28137ad1d02903d7ea4f3ef7665ffe9cb2122a7eaa9619becca9ac7513",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        },
+        {
+          "project_relative_path": "Tools/check_floor_interfaces.py",
+          "sha256": "bada16ceed9e5405ff640db9fda03cfe7b6937fe26897586f48d292fe5463d5b",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        }
+      ]
+    },
+    {
+      "id": "C06",
+      "feedback_summary": "门外落脚和梯口转向",
+      "cause_inference": "只查门洞四角，遗漏门后的连续动作和脚下实面。",
+      "revision_rule": "门内转身—穿门—门外站稳—转向—接梯，逐段查障碍和水平支承。",
+      "verification_scope": "报告含before/after真实网格求交及未承托面积；只覆盖声明路线和人体。",
+      "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
+      "historical_artifacts": [
+        {
+          "project_relative_path": "成果/1025-PlanE露台门与梯口修正_R01/核查/门到露台及短梯真实通行.json",
+          "sha256": "4ed001e998c3fef7c19770f500ef7ac485c468fb561584cbe4dd7ef46fd8beb0",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        },
+        {
+          "project_relative_path": "成果/1025-PlanE露台门与梯口修正_R01/工具/check_passage.py",
+          "sha256": "f9908e44434791f4090ab48461e6aa487a1abe8962c1f81f417c568bf91e4cf9",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        }
+      ]
+    },
+    {
+      "id": "C07",
+      "feedback_summary": "碰撞修复破坏围合或防护",
+      "cause_inference": "删掉相交构件时遗漏它承担的功能；部分反馈来自爆炸图表达。",
+      "revision_rule": "同时保留围合、隐私、防护、支承；图面删墙不自动回写建筑。",
+      "verification_scope": "图纸批注与模型缺陷须分开；未证明每次图面删墙均来自模型。",
+      "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
+      "historical_artifacts": [
+        {
+          "project_relative_path": "成果/1026-PlanE错层护栏恢复_R09/核查/错层护栏及通行核查.json",
+          "sha256": "5751955af40f4faf3ffef9d85943f9a81acdfb017a7d780b93c848cea58a398b",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        },
+        {
+          "project_relative_path": "成果/1026-PlanE错层护栏恢复_R09/工具/check_guards.py",
+          "sha256": "9d8905a11ed9eeef87305e0321628fbffc38005841382c1c863c74d981965edd",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        }
+      ]
+    },
+    {
+      "id": "C08",
+      "feedback_summary": "独立房间与错层视线",
+      "cause_inference": "功能名被机械翻译为通高封墙，破坏已确认空间关系。",
+      "revision_rule": "户界、房间界、临空边、视觉联系分别建模；重大空间取舍由用户决定。",
+      "verification_scope": "R09恢复开敞错层并保留交通证据；专业防护构造仍待深化。",
+      "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
+      "historical_artifacts": [
+        {
+          "project_relative_path": "成果/1026-PlanE错层护栏恢复_R09/00_阅读入口.md",
+          "sha256": "6fd3aadec7283cd713539268320f50bde655625911e7de53b85023ddb95dcf67",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        },
+        {
+          "project_relative_path": "成果/1026-PlanE错层护栏恢复_R09/工具/design.py",
+          "sha256": "f5cd86476d9cf84dbbac9a56974d8227db7e8ee9ebc060a87282c99db64d23ff",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        }
+      ]
+    },
+    {
+      "id": "C09",
+      "feedback_summary": "家具方向与使用动作",
+      "cause_inference": "朝向、落地及操作空间未与实际使用联合推敲。",
+      "revision_rule": "组合样件先行，按坐下/拉椅/开柜/上下床等动作验证并带动灯具。",
+      "verification_scope": "报告是声明对象及动作状态；不等于完整人体连续运动。",
+      "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
+      "historical_artifacts": [
+        {
+          "project_relative_path": "成果/1026-PlanE居住与接口精修_R07/核查/家具与邻接通行核查.json",
+          "sha256": "ec2362d4969cb3cfe34ea65c9d7d4044aff61ee5d581553687ac90d960bd526e",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        },
+        {
+          "project_relative_path": "成果/1026-PlanE居住与接口精修_R07/00_阅读入口.md",
+          "sha256": "89d8b654ed50cec68a8416b7af250e76ad783535a60f87ed095a74fb2acb5ea3",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        }
+      ]
+    },
+    {
+      "id": "C10",
+      "feedback_summary": "双版变化没有说明",
+      "cause_inference": "整区域豁免会掩盖非改造构件变化。",
+      "revision_rule": "共享构件按世界几何及逐面材质/UV比较；差异按具体构件与边界登记。",
+      "verification_scope": "当前版本一致性检查通过，版本专属改变保留。",
+      "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
+      "historical_artifacts": [
+        {
+          "project_relative_path": "项目上下文/两版构件一致性基准.json",
+          "sha256": "a2f2a844df8dd19dc741865ca3de6b9822602863c25f9efca61344579b34b3df",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        },
+        {
+          "project_relative_path": "Tools/check_project_context.py",
+          "sha256": "06207f6abc9cc70a52944b3392952ffc5bb22306cd5ccb8a416e8c13fe29e8c5",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        }
+      ]
+    },
+    {
+      "id": "C11",
+      "feedback_summary": "跨软件资产与材质",
+      "cause_inference": "原点、单位、材质及许可未形成可复用接口。",
+      "revision_rule": "独立Blender进程、可编辑源、安装基准、素材许可、SU实际导入和编辑。",
+      "verification_scope": "本轮已读来源记录；新MCP样件的完整往返另有失败与修复回执。",
+      "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
+      "historical_artifacts": [
+        {
+          "project_relative_path": "资产库/新精神住宅适配_R02/来源/逐项来源与替换.json",
+          "sha256": "b2242d10f1c3dcd554916d0807e5edeacef7c33a59d8cf1e94eb726ca8835cd6",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        },
+        {
+          "project_relative_path": "资产库/新精神住宅适配_R02/来源/来源说明.md",
+          "sha256": "dd0382d19d54a15ede6c79f0aa5e097a950e7e8980d60c156d365a22a5496b9d",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        }
+      ]
+    },
+    {
+      "id": "C12",
+      "feedback_summary": "出图、漫游、打印暴露模型问题",
+      "cause_inference": "派生表达与真实建筑事实可能混用，制造分件不等于主模型组织。",
+      "revision_rule": "同一冻结来源派生；复杂平面/关键剖面试读；派生几何更正返回受影响阶段。",
+      "verification_scope": "图面清晰度、实体试印、自由飞行、实际步行分别报告。",
+      "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
+      "historical_artifacts": [
+        {
+          "project_relative_path": "最终/工作/G_出图专用模型/R01/00_阅读入口.md",
+          "sha256": "24a92761b231efdb4de04888134bdda5866609cd6e2e83aeed7bc2e56a7d52d1",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        },
+        {
+          "project_relative_path": "Tools/skills/su-unity-walkthrough/SKILL.md",
+          "sha256": "283b1a68b2df8f53fd69cee59c5e5cc991e4d505a32fa1f7fdcc401e1793a1dd",
+          "located": true,
+          "availability": "Local historical artifact; not all are redistributed"
+        }
+      ]
+    }
+  ]
+}

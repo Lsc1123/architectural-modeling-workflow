@@ -1,0 +1,120 @@
+{
+  "generator": {
+    "historical_project_relative_path": "成果/1026-PlanE交通铺地_R03/工具/design_finishes.py",
+    "sha256": "806c23cbfe8459c4cacf7b83442661e6f1ecbf7160b28a57f7f03b91a4d0af80",
+    "method": "Owner-authored NumPy/Pillow noise/grain; not copied image data"
+  },
+  "textures": [
+    {
+      "material": "LR_A室内_低色差木地板_00",
+      "filename": "A_IN_00.png",
+      "source_sha256": "c845bf98566ecf349c9e9a1adb8f44027bac1d8363b8de853079a5dd4529dbc0",
+      "repeat_m": [
+        0.4,
+        1.2
+      ],
+      "license": "CC0-1.0",
+      "authorship": "Original procedural project image"
+    },
+    {
+      "material": "LR_A室内_低色差木地板_01",
+      "filename": "A_IN_01.png",
+      "source_sha256": "2614a9f43ad7f6122e39f9b2a932e66d231adf88c137cf1692b7949c3364d953",
+      "repeat_m": [
+        0.4,
+        1.2
+      ],
+      "license": "CC0-1.0",
+      "authorship": "Original procedural project image"
+    },
+    {
+      "material": "LR_A室内_低色差木地板_02",
+      "filename": "A_IN_02.png",
+      "source_sha256": "cc6cf1d3869fd714ece2663bdaba1ad0ddbcda8c2a57ec0f0580be8d64e51d50",
+      "repeat_m": [
+        0.4,
+        1.2
+      ],
+      "license": "CC0-1.0",
+      "authorship": "Original procedural project image"
+    },
+    {
+      "material": "LR_A室外_浅暖灰大岩板",
+      "filename": "A_OUT_00.png",
+      "source_sha256": "b2cb36968624cd6a93302977b533344da48875d65e1573d9336443383916ede2",
+      "repeat_m": [
+        1.2,
+        1.2
+      ],
+      "license": "CC0-1.0",
+      "authorship": "Original procedural project image"
+    },
+    {
+      "material": "LR_B室内_灰粉连续橡胶",
+      "filename": "B_IN_00.png",
+      "source_sha256": "4d60034e0e5b2bf283113429547f6203f5d888d278eb8cb730076b94fae80999",
+      "repeat_m": [
+        1.2,
+        1.2
+      ],
+      "license": "CC0-1.0",
+      "authorship": "Original procedural project image"
+    },
+    {
+      "material": "LR_B室外_近黑哑光炻质大板",
+      "filename": "B_OUT_00.png",
+      "source_sha256": "8321b8eff529a9b9a75b68f44779ccd4c27640877b3a8fe3f727e492ba44af8d",
+      "repeat_m": [
+        1.2,
+        1.2
+      ],
+      "license": "CC0-1.0",
+      "authorship": "Original procedural project image"
+    },
+    {
+      "material": "LR_A湿区_暖米灰砖",
+      "filename": "A_WET_00.png",
+      "source_sha256": "fc2938dbbf51d8068873b5e678c19022f106cf9cbea499d44c50146ba0a54e8e",
+      "repeat_m": [
+        0.4,
+        0.4
+      ],
+      "license": "CC0-1.0",
+      "authorship": "Original procedural project image"
+    },
+    {
+      "material": "LR_B湿区_浅灰砖",
+      "filename": "B_WET_00.png",
+      "source_sha256": "faff7247ab3d805fb6470c65cddb6965a61138745d45c52e5cdc58479367e577",
+      "repeat_m": [
+        0.4,
+        0.4
+      ],
+      "license": "CC0-1.0",
+      "authorship": "Original procedural project image"
+    },
+    {
+      "material": "LR_交通室内_深赭红哑光橡胶",
+      "filename": "C_IN_00.png",
+      "source_sha256": "9dd51bcf11bb58e9d19ddd533ca92dfd9b094676a43bd98a0f2ec57042326bea",
+      "repeat_m": [
+        1.2,
+        1.2
+      ],
+      "license": "CC0-1.0",
+      "authorship": "Original procedural project image"
+    },
+    {
+      "material": "LR_交通室外_中灰哑光石质",
+      "filename": "C_OUT_00.png",
+      "source_sha256": "1fd80896922fe582c185400d0ea1e6c59aab9d4477a0c6be9f204d024ff2f6be",
+      "repeat_m": [
+        1.2,
+        1.2
+      ],
+      "license": "CC0-1.0",
+      "authorship": "Original procedural project image"
+    }
+  ],
+  "adaptation": "Project material/color translation, not historical measured reconstruction. No research PDF or photo redistributed."
+}

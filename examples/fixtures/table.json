@@ -1,0 +1,103 @@
+{
+  "asset_id": "table_sample",
+  "blend": "assets/r01/table.blend",
+  "glb": "assets/r01/table.glb",
+  "dae": "assets/r01/table.dae",
+  "preview": "assets/r01/table.png",
+  "sources": [
+    {
+      "kind": "original",
+      "license": "CC0-1.0",
+      "note": "Synthetic original integration fixture"
+    }
+  ],
+  "materials": [
+    {
+      "name": "Warm top",
+      "color": [
+        0.65,
+        0.4,
+        0.22,
+        1
+      ],
+      "license": "CC0-1.0"
+    },
+    {
+      "name": "Frame",
+      "color": [
+        0.1,
+        0.1,
+        0.1,
+        1
+      ],
+      "metallic": 0.4,
+      "license": "CC0-1.0"
+    }
+  ],
+  "parts": [
+    {
+      "type": "box",
+      "name": "Top",
+      "location": [
+        0,
+        0,
+        0.73
+      ],
+      "size": [
+        1.2,
+        0.7,
+        0.02
+      ],
+      "material": "Warm top",
+      "bevel_m": 0.002
+    },
+    {
+      "type": "cylinder",
+      "name": "Leg_0",
+      "location": [
+        -0.5,
+        -0.25,
+        0.36
+      ],
+      "radius": 0.018,
+      "depth": 0.72,
+      "material": "Frame"
+    },
+    {
+      "type": "cylinder",
+      "name": "Leg_1",
+      "location": [
+        0.5,
+        -0.25,
+        0.36
+      ],
+      "radius": 0.018,
+      "depth": 0.72,
+      "material": "Frame"
+    },
+    {
+      "type": "cylinder",
+      "name": "Leg_2",
+      "location": [
+        -0.5,
+        0.25,
+        0.36
+      ],
+      "radius": 0.018,
+      "depth": 0.72,
+      "material": "Frame"
+    },
+    {
+      "type": "cylinder",
+      "name": "Leg_3",
+      "location": [
+        0.5,
+        0.25,
+        0.36
+      ],
+      "radius": 0.018,
+      "depth": 0.72,
+      "material": "Frame"
+    }
+  ]
+}

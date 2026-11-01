@@ -1,0 +1,43 @@
+{
+  "name": "Original fixed pavilion acceptance task",
+  "license": "CC0-1.0",
+  "purpose": "Integration benchmark, not a real client approval or a professional building certificate",
+  "site_outline_m": [
+    [
+      -0.5,
+      -1.5
+    ],
+    [
+      6.5,
+      -1.5
+    ],
+    [
+      6.5,
+      5.5
+    ],
+    [
+      -0.5,
+      5.5
+    ]
+  ],
+  "max_z_m": 3.2,
+  "brief": "6x5m small pavilion; continuous entry floor; four rises to a 0.72m raised platform; finished wall/slab/openings, an open door, window, solid guards, table and ceiling lamp; editable native model and downstream plan/section data.",
+  "candidates": {
+    "A": "Continuous floor with raised platform",
+    "B": "Central 2x2m courtyard opening"
+  },
+  "fixed_user_decisions": [
+    {
+      "kind": "choose_scheme",
+      "statement": "Select A for continuous indoor floor and keep the raised platform strategy"
+    },
+    {
+      "kind": "accept_handoff",
+      "statement": "Accept the benchmark only after declared geometry, use, readback, editability and visual scopes pass"
+    }
+  ],
+  "limits": [
+    "No structural, MEP, drainage or regulatory certification",
+    "Tread checks cover stated support/headroom samples; continuous human gait remains unverified"
+  ]
+}

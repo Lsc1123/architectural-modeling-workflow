@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "license": "CC0-1.0 for owner contribution; see third-party provenance",
+  "variants": {
+    "Unified": {
+      "model": "plan-e-public/r02/Unified/Unified.skp",
+      "original_sha256": "9bbefd2c9079172de03d2e2e4ba843223e122a1d7bef2a0787f252850bb077e8",
+      "geometry": "plan-e-public/r02/Unified/geometry.json",
+      "object_count": 1438,
+      "instance_count": 1621,
+      "scene_count": 6,
+      "materials": 347,
+      "native_texture_files": 10,
+      "native_document_event": {
+        "path": "plan-e-public/r02/Unified/Unified.skp",
+        "native_document_event": "open",
+        "new_document_id": "ba041f2eb762a09069211276",
+        "verification": "Observed a new native document event; compare subsequent geometry"
+      },
+      "reader": [
+        {
+          "path": "plan-e-public/r02/Unified/drawing/complex-plan.json",
+          "intersected_objects": 155,
+          "native_face_rings": 521827,
+          "scope": "All exported native geometry, including any hidden by saved views"
+        },
+        {
+          "path": "plan-e-public/r02/Unified/drawing/key-section.json",
+          "intersected_objects": 82,
+          "native_face_rings": 521827,
+          "scope": "All exported native geometry, including any hidden by saved views"
+        }
+      ],
+      "history": {
+        "verification_path": "history/verification_path.json",
+        "circulation_verification": "history/circulation_verification.json",
+        "native_edit_verification": "history/native_edit_verification.json",
+        "scene_verification": "history/scene_verification.json"
+      },
+      "fresh_checks": [
+        "Source preserved byte-for-byte",
+        "Native file actually reopened with new document identity",
+        "Native rings/instances/materials/scenes and actual texture files exported",
+        "Complex plan and key section read"
+      ],
+      "unverified": [
+        "No new global geometry/actions compliance check",
+        "Legacy objects without solid classification remain unverified",
+        "Structural/lighting/material/MEP details listed in context"
+      ]
+    },
+    "Split": {
+      "model": "plan-e-public/r02/Split/Split.skp",
+      "original_sha256": "0cb8d5521b39cc6a2577069f9f8bbe80652eff9c340c3c7fb66338bf84996479",
+      "geometry": "plan-e-public/r02/Split/geometry.json",
+      "object_count": 1505,
+      "instance_count": 1678,
+      "scene_count": 6,
+      "materials": 402,
+      "native_texture_files": 10,
+      "native_document_event": {
+        "path": "plan-e-public/r02/Split/Split.skp",
+        "native_document_event": "open",
+        "new_document_id": "e5e25e0a24014e462dd44c8f",
+        "verification": "Observed a new native document event; compare subsequent geometry"
+      },
+      "reader": [
+        {
+          "path": "plan-e-public/r02/Split/drawing/complex-plan.json",
+          "intersected_objects": 124,
+          "native_face_rings": 541100,
+          "scope": "All exported native geometry, including any hidden by saved views"
+        },
+        {
+          "path": "plan-e-public/r02/Split/drawing/key-section.json",
+          "intersected_objects": 85,
+          "native_face_rings": 541100,
+          "scope": "All exported native geometry, including any hidden by saved views"
+        }
+      ],
+      "history": {
+        "verification_path": "history/verification_path.json",
+        "circulation_verification": "history/circulation_verification.json",
+        "native_edit_verification": "history/native_edit_verification.json",
+        "scene_verification": "history/scene_verification.json",
+        "guard_verification": "history/guard_verification.json"
+      },
+      "fresh_checks": [
+        "Source preserved byte-for-byte",
+        "Native file actually reopened with new document identity",
+        "Native rings/instances/materials/scenes and actual texture files exported",
+        "Complex plan and key section read"
+      ],
+      "unverified": [
+        "No new global geometry/actions compliance check",
+        "Legacy objects without solid classification remain unverified",
+        "Structural/lighting/material/MEP details listed in context"
+      ]
+    }
+  },
+  "source_fact_table_sha256": "2d37a55661e48f07e29ab30bf0f802fd0627d4559245ca30c7e43c8320a422a2",
+  "design_changes": "none"
+}

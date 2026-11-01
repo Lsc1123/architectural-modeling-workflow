@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "method": "Clean independent Python 3.12 venv, hash-locked dependencies, installed wheel from outside repository; actual stdio discovery and get_capabilities",
+  "tools": 41,
+  "bundled_bridge_sha256": "8e98689f2a4e36e84da523ce6a8ff70fdae1ce2d02f2b7c99b17addfd6142a4a",
+  "final_code_reinstalled_and_rechecked": true
+}

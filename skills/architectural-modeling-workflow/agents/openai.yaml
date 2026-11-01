@@ -1,0 +1,4 @@
+interface:
+  display_name: "建筑建模协作工作流"
+  short_description: "从空间推敲到原生模型精修，管理修改范围、验证证据与多软件交接"
+  default_prompt: "使用 $architectural-modeling-workflow 接手当前建筑模型，先核对最新基线与设计约束，再推进本轮建模并验证交付。"

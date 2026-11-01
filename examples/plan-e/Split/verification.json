@@ -1,0 +1,48 @@
+{
+  "model": "plan-e-public/r02/Split/Split.skp",
+  "original_sha256": "0cb8d5521b39cc6a2577069f9f8bbe80652eff9c340c3c7fb66338bf84996479",
+  "geometry": "plan-e-public/r02/Split/geometry.json",
+  "object_count": 1505,
+  "instance_count": 1678,
+  "scene_count": 6,
+  "materials": 402,
+  "native_texture_files": 10,
+  "native_document_event": {
+    "path": "plan-e-public/r02/Split/Split.skp",
+    "native_document_event": "open",
+    "new_document_id": "e5e25e0a24014e462dd44c8f",
+    "verification": "Observed a new native document event; compare subsequent geometry"
+  },
+  "reader": [
+    {
+      "path": "plan-e-public/r02/Split/drawing/complex-plan.json",
+      "intersected_objects": 124,
+      "native_face_rings": 541100,
+      "scope": "All exported native geometry, including any hidden by saved views"
+    },
+    {
+      "path": "plan-e-public/r02/Split/drawing/key-section.json",
+      "intersected_objects": 85,
+      "native_face_rings": 541100,
+      "scope": "All exported native geometry, including any hidden by saved views"
+    }
+  ],
+  "history": {
+    "verification_path": "history/verification_path.json",
+    "circulation_verification": "history/circulation_verification.json",
+    "native_edit_verification": "history/native_edit_verification.json",
+    "scene_verification": "history/scene_verification.json",
+    "guard_verification": "history/guard_verification.json"
+  },
+  "fresh_checks": [
+    "Source preserved byte-for-byte",
+    "Native file actually reopened with new document identity",
+    "Native rings/instances/materials/scenes and actual texture files exported",
+    "Complex plan and key section read"
+  ],
+  "unverified": [
+    "No new global geometry/actions compliance check",
+    "Legacy objects without solid classification remain unverified",
+    "Structural/lighting/material/MEP details listed in context"
+  ]
+}

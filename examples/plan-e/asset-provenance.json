@@ -1,0 +1,1666 @@
+{
+  "scope": "Historical R02 source catalogue, not a claim that every candidate occurs in both final variants. Original adapted geometry CC0 by owner authorization; external assets retain listed licenses.",
+  "assets": [
+    {
+      "id": "F01",
+      "name_zh": "缎镍钢架深色扶手椅",
+      "category": "家具",
+      "areas": "P02/P08",
+      "notes": "座高430mm；独立软垫、钢架与托条；参考拉罗什后续配置的软座类型，非1925原始布置复刻",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "bounds_min": [
+        -0.38100001215934753,
+        -0.35100001096725464,
+        0.0
+      ],
+      "bounds_max": [
+        0.38100001215934753,
+        0.34768256545066833,
+        0.7316819429397583
+      ],
+      "dimensions_mm": [
+        762.0,
+        698.7,
+        731.7
+      ],
+      "triangles": 4540,
+      "parts": 17,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "重做深色软垫、托条与细钢架；用于少量重点软座。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F02",
+      "name_zh": "曲木藤面餐椅",
+      "category": "家具",
+      "areas": "P05/P08",
+      "notes": "座面高460mm；原创曲木椅适配，藤面为独立交织构件；替代R01悬臂餐椅",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "seat_top_m": 0.4615,
+      "bounds_min": [
+        -0.22600001096725464,
+        -0.2200000137090683,
+        0.0
+      ],
+      "bounds_max": [
+        0.22600001096725464,
+        0.2656329870223999,
+        0.8659207820892334
+      ],
+      "dimensions_mm": [
+        452.0,
+        485.6,
+        865.9
+      ],
+      "triangles": 37528,
+      "parts": 88,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "替换 R01 悬臂椅；原创曲木和几何藤编，不冒充 Thonet 原版尺寸。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F03",
+      "name_zh": "木面细架餐桌1200",
+      "category": "家具",
+      "areas": "P05/P08",
+      "notes": "1200×700×740mm；桌下梁顶高707mm，前后两人配置；四人仅为临时候选",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "bounds_min": [
+        -0.6000000238418579,
+        -0.3499999940395355,
+        0.0
+      ],
+      "bounds_max": [
+        0.6000000238418579,
+        0.3499999940395355,
+        0.7400000095367432
+      ],
+      "dimensions_mm": [
+        1200.0,
+        700.0,
+        740.0
+      ],
+      "triangles": 4020,
+      "parts": 11,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "重做矩形木桌面与细 U 型金属支架，保留 1200×700×740 功能尺寸。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "texture_source": "https://polyhaven.com/a/wood_table_001",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F04",
+      "name_zh": "脚轮方茶几650",
+      "category": "家具",
+      "areas": "P02",
+      "notes": "650×650×405mm；完整脚轮支架；木面与餐桌共用材质；日夜移动功能保留",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "bounds_min": [
+        -0.32499998807907104,
+        -0.32499998807907104,
+        -4.589695845602648e-10
+      ],
+      "bounds_max": [
+        0.32499998807907104,
+        0.32499998807907104,
+        0.4050000011920929
+      ],
+      "dimensions_mm": [
+        650.0,
+        650.0,
+        405.0
+      ],
+      "triangles": 11032,
+      "parts": 26,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "保留 650 方形桌面及脚轮功能；统一木面和金属截面，补脚轮叉架。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "texture_source": "https://polyhaven.com/a/wood_table_001",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F05",
+      "name_zh": "圆边几450",
+      "category": "家具",
+      "areas": "P02/P08/P10",
+      "notes": "直径450mm，高520mm；薄漆面桌盘和缎镍支杆",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "bounds_min": [
+        -0.22499999403953552,
+        -0.22499999403953552,
+        0.0
+      ],
+      "bounds_max": [
+        0.22499999403953552,
+        0.22499999403953552,
+        0.5199999809265137
+      ],
+      "dimensions_mm": [
+        450.0,
+        450.0,
+        520.0
+      ],
+      "triangles": 1716,
+      "parts": 3,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "采用薄桌盘、单支杆和实心底盘，减少材料种类。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F06",
+      "name_zh": "沙发床_日间",
+      "category": "家具",
+      "areas": "P02",
+      "notes": "日夜为互斥状态；夜间名义睡眠面1400×2000mm；转换五金仅示意",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "bounds_min": [
+        -1.0219999551773071,
+        -0.4099999964237213,
+        0.0
+      ],
+      "bounds_max": [
+        1.0219999551773071,
+        0.4107927978038788,
+        0.7947618961334229
+      ],
+      "dimensions_mm": [
+        2044.0,
+        820.8,
+        794.8
+      ],
+      "triangles": 6380,
+      "parts": 17,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "日间深色软垫，分离承托、靠垫及端扶手；与 F07 互斥。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F07",
+      "name_zh": "沙发床_夜间",
+      "category": "家具",
+      "areas": "P02",
+      "notes": "日夜为互斥状态；夜间名义睡眠面1400×2000mm；转换五金仅示意",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "bounds_min": [
+        -1.0199999809265137,
+        -0.7200000286102295,
+        0.0
+      ],
+      "bounds_max": [
+        1.0199999809265137,
+        0.7200000286102295,
+        0.5400000214576721
+      ],
+      "dimensions_mm": [
+        2040.0,
+        1440.0,
+        540.0
+      ],
+      "triangles": 5588,
+      "parts": 15,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "夜间名义 2000×1400 睡眠面，分件表达；五金为方案级。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F08",
+      "name_zh": "金属架双人床1500",
+      "category": "家具",
+      "areas": "P03/P10",
+      "notes": "1500×2000mm床垫；睡眠面460mm；可拆木质床头，沿用住宅使用高度",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "bounds_min": [
+        -0.7799999713897705,
+        -1.0049999952316284,
+        0.0
+      ],
+      "bounds_max": [
+        0.7799999713897705,
+        1.0239999294281006,
+        0.875
+      ],
+      "dimensions_mm": [
+        1560.0,
+        2029.0,
+        875.0
+      ],
+      "triangles": 9248,
+      "parts": 32,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "保留 1500×2000 床垫；统一细金属框架、床板条及木床头。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "texture_source": "https://polyhaven.com/a/wood_table_001",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F09",
+      "name_zh": "通透分格书架1200",
+      "category": "储物",
+      "areas": "P02/P05/P08/P10",
+      "notes": "1200×300×1440mm；400mm名义分格，18mm板；双面可用，不承担临空防护",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "module_m": 0.4,
+      "panel_thickness_m": 0.018,
+      "bounds_min": [
+        -0.6000000238418579,
+        -0.15000000596046448,
+        0.0
+      ],
+      "bounds_max": [
+        0.6000000238418579,
+        0.15000000596046448,
+        1.4399999380111694
+      ],
+      "dimensions_mm": [
+        1200.0,
+        300.0,
+        1440.0
+      ],
+      "triangles": 1880,
+      "parts": 10,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "替换通用浅木架；采用 400 名义分格、18 板厚、80 底座的通透书架。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F10",
+      "name_zh": "标准低柜1200",
+      "category": "储物",
+      "areas": "P02/P05/P08/P10",
+      "notes": "1200×400×720mm；400mm名义分格，18mm板；柜门可独立选中；高柜安装防倾倒待现场落实",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "module_m": 0.4,
+      "panel_thickness_m": 0.018,
+      "bounds_min": [
+        -0.6000000238418579,
+        -0.23600000143051147,
+        0.0
+      ],
+      "bounds_max": [
+        0.6000000238418579,
+        0.20000000298023224,
+        0.7200000286102295
+      ],
+      "dimensions_mm": [
+        1200.0,
+        436.0,
+        720.0
+      ],
+      "triangles": 3972,
+      "parts": 15,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "替换通用浅木餐边柜；三扇门、18 板厚、80 底座，暖白柜体配石墨薄顶。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F11",
+      "name_zh": "细杆阅读灯",
+      "category": "灯具",
+      "areas": "P02/P08/P10",
+      "notes": "高1460mm；细杆、遮光罩和安装接头独立可编辑",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "bounds_min": [
+        -0.14499999582767487,
+        -0.14499999582767487,
+        0.0
+      ],
+      "bounds_max": [
+        0.3199999928474426,
+        0.14499999582767487,
+        1.4529999494552612
+      ],
+      "dimensions_mm": [
+        465.0,
+        290.0,
+        1453.0
+      ],
+      "triangles": 2444,
+      "parts": 5,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "重做细杆、灯罩和连接头；是住宅阅读灯适配，非拉罗什专用灯复制品。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F12",
+      "name_zh": "细架板条露台椅",
+      "category": "家具",
+      "areas": "P07/P09/P11",
+      "notes": "座高440mm；24mm喷涂管架、统一宽木条，含后腿和座面横撑",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "bounds_min": [
+        -0.26499998569488525,
+        -0.23999999463558197,
+        0.0
+      ],
+      "bounds_max": [
+        0.26499998569488525,
+        0.282173752784729,
+        0.8083194494247437
+      ],
+      "dimensions_mm": [
+        530.0,
+        522.2,
+        808.3
+      ],
+      "triangles": 4728,
+      "parts": 18,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "统一 24 管架、宽木条、后腿及座承横梁。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "texture_source": "https://polyhaven.com/a/wood_table_001",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F13",
+      "name_zh": "细架板条长凳1200",
+      "category": "家具",
+      "areas": "P01/P07/P09/P11",
+      "notes": "1200×390×450mm；与露台椅共用木条和管架；独立坐凳",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "bounds_min": [
+        -0.6000000238418579,
+        -0.19499999284744263,
+        0.0
+      ],
+      "bounds_max": [
+        0.6000000238418579,
+        0.19499999284744263,
+        0.45000001788139343
+      ],
+      "dimensions_mm": [
+        1200.0,
+        390.0,
+        450.0
+      ],
+      "triangles": 4092,
+      "parts": 13,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "与 F12 共用板条和管架规则，保留 1200 长凳。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "texture_source": "https://polyhaven.com/a/wood_table_001",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F15",
+      "name_zh": "标准高柜1200",
+      "category": "储物",
+      "areas": "P02/P05/P08/P10",
+      "notes": "1200×450×1800mm；400mm名义分格，18mm板；柜门可独立选中；高柜安装防倾倒待现场落实",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "module_m": 0.4,
+      "panel_thickness_m": 0.018,
+      "bounds_min": [
+        -0.6000000238418579,
+        -0.26100000739097595,
+        0.0
+      ],
+      "bounds_max": [
+        0.6000000238418579,
+        0.22499999403953552,
+        1.7999999523162842
+      ],
+      "dimensions_mm": [
+        1200.0,
+        486.0,
+        1800.0
+      ],
+      "triangles": 4536,
+      "parts": 18,
+      "replacement": "新增",
+      "adaptation": "新增高柜，延续 F10 分格、板厚、底座和小圆拉手。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F16",
+      "name_zh": "双面低柜1200",
+      "category": "储物",
+      "areas": "P02/P05/P08/P10",
+      "notes": "1200×360×720mm；400mm名义分格，18mm板；双面可用，不承担临空防护",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "module_m": 0.4,
+      "panel_thickness_m": 0.018,
+      "bounds_min": [
+        -0.6000000238418579,
+        -0.18000000715255737,
+        0.0
+      ],
+      "bounds_max": [
+        0.6000000238418579,
+        0.18000000715255737,
+        0.7200000286102295
+      ],
+      "dimensions_mm": [
+        1200.0,
+        360.0,
+        720.0
+      ],
+      "triangles": 1692,
+      "parts": 9,
+      "replacement": "新增",
+      "adaptation": "新增独立分隔双面低柜；中隔板两侧均为浅储物格。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "S01",
+      "name_zh": "暖白细抹灰",
+      "category": "墙面",
+      "areas": "室内",
+      "notes": "1.2m样板；颜色为本项目适配值；安装保持建筑完成面标高",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "wall face Y=0, bottom Z=0",
+      "revision": "R02",
+      "bounds_min": [
+        -0.6000000238418579,
+        0.0,
+        0.0
+      ],
+      "bounds_max": [
+        0.6000000238418579,
+        0.019999999552965164,
+        1.2000000476837158
+      ],
+      "dimensions_mm": [
+        1200.0,
+        20.0,
+        1200.0
+      ],
+      "triangles": 188,
+      "parts": 1,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "暖白细抹灰，作为室内主背景。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "S02",
+      "name_zh": "浅赭细抹灰",
+      "category": "墙面",
+      "areas": "室内",
+      "notes": "1.2m样板；颜色为本项目适配值；安装保持建筑完成面标高",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "wall face Y=0, bottom Z=0",
+      "revision": "R02",
+      "bounds_min": [
+        -0.6000000238418579,
+        0.0,
+        0.0
+      ],
+      "bounds_max": [
+        0.6000000238418579,
+        0.019999999552965164,
+        1.2000000476837158
+      ],
+      "dimensions_mm": [
+        1200.0,
+        20.0,
+        1200.0
+      ],
+      "triangles": 188,
+      "parts": 1,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "原风化灰泥改为浅赭细抹灰；旧风化贴图保留为室外备选。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "S03",
+      "name_zh": "暖灰细抹灰",
+      "category": "墙面",
+      "areas": "室内",
+      "notes": "1.2m样板；颜色为本项目适配值；安装保持建筑完成面标高",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "wall face Y=0, bottom Z=0",
+      "revision": "R02",
+      "bounds_min": [
+        -0.6000000238418579,
+        0.0,
+        0.0
+      ],
+      "bounds_max": [
+        0.6000000238418579,
+        0.019999999552965164,
+        1.2000000476837158
+      ],
+      "dimensions_mm": [
+        1200.0,
+        20.0,
+        1200.0
+      ],
+      "triangles": 188,
+      "parts": 1,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "改为暖灰细抹灰，避免室内使用粗混凝土。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "S04",
+      "name_zh": "局部赭红墙",
+      "category": "墙面",
+      "areas": "室内",
+      "notes": "1.2m样板；颜色为本项目适配值；安装保持建筑完成面标高",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "wall face Y=0, bottom Z=0",
+      "revision": "R02",
+      "bounds_min": [
+        -0.6000000238418579,
+        0.0,
+        0.0
+      ],
+      "bounds_max": [
+        0.6000000238418579,
+        0.019999999552965164,
+        1.2000000476837158
+      ],
+      "dimensions_mm": [
+        1200.0,
+        20.0,
+        1200.0
+      ],
+      "triangles": 188,
+      "parts": 1,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "赭红仅用作局部墙色。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "S05",
+      "name_zh": "局部灰蓝墙",
+      "category": "墙面",
+      "areas": "室内",
+      "notes": "1.2m样板；颜色为本项目适配值；安装保持建筑完成面标高",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "wall face Y=0, bottom Z=0",
+      "revision": "R02",
+      "bounds_min": [
+        -0.6000000238418579,
+        0.0,
+        0.0
+      ],
+      "bounds_max": [
+        0.6000000238418579,
+        0.019999999552965164,
+        1.2000000476837158
+      ],
+      "dimensions_mm": [
+        1200.0,
+        20.0,
+        1200.0
+      ],
+      "triangles": 188,
+      "parts": 1,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "灰蓝仅用作局部墙色。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "S06",
+      "name_zh": "连续暖灰地坪",
+      "category": "铺地",
+      "areas": "室内",
+      "notes": "1.2m样板；颜色为本项目适配值；安装保持建筑完成面标高",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "finished top Z=0, thickness below",
+      "revision": "R02",
+      "bounds_min": [
+        -0.6000000238418579,
+        -0.6000000238418579,
+        -0.019999999552965164
+      ],
+      "bounds_max": [
+        0.6000000238418579,
+        0.6000000238418579,
+        0.0
+      ],
+      "dimensions_mm": [
+        1200.0,
+        1200.0,
+        20.0
+      ],
+      "triangles": 188,
+      "parts": 1,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "连续细腻低反光地坪，代替粗糙室内地面表达。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "S07",
+      "name_zh": "室外混凝土地面",
+      "category": "铺地",
+      "areas": "庭院/露台",
+      "notes": "1.2m样板；颜色为本项目适配值；安装保持建筑完成面标高",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "finished top Z=0, thickness below",
+      "revision": "R02",
+      "bounds_min": [
+        -0.6000000238418579,
+        -0.6000000238418579,
+        -0.019999999552965164
+      ],
+      "bounds_max": [
+        0.6000000238418579,
+        0.6000000238418579,
+        0.0
+      ],
+      "dimensions_mm": [
+        1200.0,
+        1200.0,
+        20.0
+      ],
+      "triangles": 188,
+      "parts": 1,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "粗混凝土保留为室外备选。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/",
+        "https://polyhaven.com/a/concrete_floor_02"
+      ],
+      "license_note": "原创样板几何＋Poly Haven CC0 混凝土贴图",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "S08",
+      "name_zh": "1200模数哑光大岩板",
+      "category": "铺地",
+      "areas": "庭院/露台",
+      "notes": "1200×1200mm名义铺装模数；1197×1197mm实板，3mm缝，20mm方案厚度；浅暖灰哑光低纹理；完成面Z=0。户外产品、防滑及基层另行选型。",
+      "source": "用户2026-10-25要求：户外改大岩板；原创几何及低纹理材质",
+      "units": "metre",
+      "anchor": "finished top Z=0; thickness below; repeat pitch 1200mm in X and Y",
+      "revision": "R02户外岩板01",
+      "bounds_min": [
+        -0.5985000133514404,
+        -0.5985000133514404,
+        -0.019999999552965164
+      ],
+      "bounds_max": [
+        0.5985000133514404,
+        0.5985000133514404,
+        0.0
+      ],
+      "dimensions_mm": [
+        1197.0,
+        1197.0,
+        20.0
+      ],
+      "triangles": 188,
+      "parts": 1,
+      "replacement": "替换同编号粗纹理版本",
+      "adaptation": "1200×1200mm名义铺装模数；1197×1197mm实板，3mm缝，20mm方案厚度；浅暖灰哑光低纹理；完成面Z=0。户外产品、防滑及基层另行选型。",
+      "references": [],
+      "license_note": "原创岩板及素面支承几何、材质；项目适配，未指定品牌产品",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "V01",
+      "name_zh": "高盆栽_素陶盆",
+      "category": "植物",
+      "areas": "P02/P08",
+      "notes": "CC0植物复用；盆器整理为素面；品种和适生条件未核定",
+      "source": "https://polyhaven.com/a/potted_plant_01",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "license": "CC0",
+      "source_id": "potted_plant_01",
+      "bounds_min": [
+        -0.29369357228279114,
+        -0.3167824149131775,
+        0.0
+      ],
+      "bounds_max": [
+        0.29369357228279114,
+        0.3167824149131775,
+        1.336457371711731
+      ],
+      "dimensions_mm": [
+        587.4,
+        633.6,
+        1336.5
+      ],
+      "triangles": 115504,
+      "parts": 4,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "保留免费植物，替换原盆为素陶盆、整理土面和落地基点。",
+      "references": [
+        "https://polyhaven.com/a/potted_plant_01"
+      ],
+      "license_note": "植物模型 CC0（Poly Haven）；盆器和排布为项目原创适配",
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "V02",
+      "name_zh": "中盆栽_素陶盆",
+      "category": "植物",
+      "areas": "P02/P08/P10",
+      "notes": "CC0植物复用；盆器整理为素面；品种和适生条件未核定",
+      "source": "https://polyhaven.com/a/potted_plant_02",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "license": "CC0",
+      "source_id": "potted_plant_02",
+      "bounds_min": [
+        -0.35057851672172546,
+        -0.32869333028793335,
+        0.0
+      ],
+      "bounds_max": [
+        0.35057851672172546,
+        0.3286932706832886,
+        0.8411787748336792
+      ],
+      "dimensions_mm": [
+        701.2,
+        657.4,
+        841.2
+      ],
+      "triangles": 66218,
+      "parts": 4,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "保留免费植物，替换原盆为素陶盆、整理土面和落地基点。",
+      "references": [
+        "https://polyhaven.com/a/potted_plant_02"
+      ],
+      "license_note": "植物模型 CC0（Poly Haven）；盆器和排布为项目原创适配",
+      "authors": {
+        "Rico Cilliers": "All"
+      },
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "V03",
+      "name_zh": "桌面盆栽_浅色盆",
+      "category": "植物",
+      "areas": "P05/P08/P10",
+      "notes": "CC0植物复用；盆器整理为素面；品种和适生条件未核定",
+      "source": "https://polyhaven.com/a/potted_plant_04",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "license": "CC0",
+      "source_id": "potted_plant_04",
+      "bounds_min": [
+        -0.08394315838813782,
+        -0.09237571060657501,
+        0.0
+      ],
+      "bounds_max": [
+        0.08394315838813782,
+        0.09237571060657501,
+        0.26745766401290894
+      ],
+      "dimensions_mm": [
+        167.9,
+        184.8,
+        267.5
+      ],
+      "triangles": 6781,
+      "parts": 5,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "保留免费桌面植物，替换为浅色素面盆、整理落地基点。",
+      "references": [
+        "https://polyhaven.com/a/potted_plant_04"
+      ],
+      "license_note": "植物模型 CC0（Poly Haven）；盆器和排布为项目原创适配",
+      "authors": {
+        "James Ray Cock": "All"
+      },
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "V04",
+      "name_zh": "蕨类组",
+      "category": "植物",
+      "areas": "P01/P07/P09/P11",
+      "notes": "四株CC0蕨类分别按根部重定位、等比缩放至55%，排成900mm种植槽适配组；叶片允许伸出槽沿，基点Z=0",
+      "source": "https://polyhaven.com/a/fern_02",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "license": "CC0",
+      "source_id": "fern_02",
+      "bounds_min": [
+        -0.4465482831001282,
+        -0.2818637490272522,
+        0.0
+      ],
+      "bounds_max": [
+        0.43006226420402527,
+        0.23735682666301727,
+        0.23523209989070892
+      ],
+      "dimensions_mm": [
+        876.6,
+        519.2,
+        235.2
+      ],
+      "triangles": 6232,
+      "parts": 4,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "四株蕨类分别以根部重定位、缩放为 55%，适配 900 种植槽；叶片可出槽沿。",
+      "references": [
+        "https://polyhaven.com/a/fern_02"
+      ],
+      "license_note": "植物模型 CC0（Poly Haven）；盆器和排布为项目原创适配",
+      "authors": {
+        "Rob Tuytel": "scanning",
+        "Rico Cilliers": "modeling"
+      },
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "V05",
+      "name_zh": "矩形种植槽900",
+      "category": "植物配件",
+      "areas": "P01/P07/P09/P11",
+      "notes": "900×350×450mm；暖白素面槽体、土与底脚分件；排水和荷载待安装深化",
+      "source": "新精神馆标准柜／拉罗什住宅的家具与建筑关系；原创适配",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02",
+      "bounds_min": [
+        -0.44999998807907104,
+        -0.17499999701976776,
+        0.0
+      ],
+      "bounds_max": [
+        0.44999998807907104,
+        0.17499999701976776,
+        0.44999998807907104
+      ],
+      "dimensions_mm": [
+        900.0,
+        350.0,
+        450.0
+      ],
+      "triangles": 1128,
+      "parts": 6,
+      "replacement": "替换／整理 R01 同编号",
+      "adaptation": "统一暖白矩形槽体；与 V04 可组合，土面独立。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；非原版复刻，非品牌授权产品",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F17",
+      "name_zh": "细管架洗手盆600",
+      "category": "卫浴",
+      "areas": "独立样件；未指定建筑落位",
+      "notes": "600×450盆体；盆沿850mm；真实凹腔与排水口，独立龙头、下水和支架；方案级接口。",
+      "source": "原创住宅功能适配；沿用 R02 细管架、暖白及节制材料；无历史器具复刻主张",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02追加01",
+      "replacement": "新增",
+      "historical_status": "项目原创器具／家具，非历史复刻",
+      "bounds_min": [
+        -0.30000001192092896,
+        -0.22499999403953552,
+        0.0
+      ],
+      "bounds_max": [
+        0.30000001192092896,
+        0.22499999403953552,
+        1.0264126062393188
+      ],
+      "dimensions_mm": [
+        600.0,
+        450.0,
+        1026.4
+      ],
+      "triangles": 9720,
+      "parts": 15,
+      "adaptation": "600×450盆体；盆沿850mm；真实凹腔与排水口，独立龙头、下水和支架；方案级接口。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；木纹及混凝土复用 Poly Haven CC0；具体拼法、色号与器具非历史复刻",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F18",
+      "name_zh": "落地坐便器",
+      "category": "卫浴",
+      "areas": "独立样件；未指定建筑落位",
+      "notes": "外包络约380×680；坐圈高430mm；盆腔、坐圈、水箱独立；排污口与安装条件待选型。",
+      "source": "原创住宅功能适配；沿用 R02 细管架、暖白及节制材料；无历史器具复刻主张",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02追加01",
+      "replacement": "新增",
+      "historical_status": "项目原创器具／家具，非历史复刻",
+      "bounds_min": [
+        -0.19200000166893005,
+        -0.31200000643730164,
+        0.0
+      ],
+      "bounds_max": [
+        0.19200000166893005,
+        0.35999998450279236,
+        0.7980000376701355
+      ],
+      "dimensions_mm": [
+        384.0,
+        672.0,
+        798.0
+      ],
+      "triangles": 4208,
+      "parts": 6,
+      "adaptation": "外包络约380×680；坐圈高430mm；盆腔、坐圈、水箱独立；排污口与安装条件待选型。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；木纹及混凝土复用 Poly Haven CC0；具体拼法、色号与器具非历史复刻",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F19",
+      "name_zh": "900方形淋浴底盘",
+      "category": "卫浴",
+      "areas": "独立样件；未指定建筑落位",
+      "notes": "900×900×55mm；低沿55mm、盘内坡面25至38mm；盘底Z=0，非与完成面自动齐平；安装需另核降板及排水。",
+      "source": "原创住宅功能适配；沿用 R02 细管架、暖白及节制材料；无历史器具复刻主张",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02追加01",
+      "replacement": "新增",
+      "historical_status": "项目原创器具／家具，非历史复刻",
+      "bounds_min": [
+        -0.44999998807907104,
+        -0.44999998807907104,
+        0.0
+      ],
+      "bounds_max": [
+        0.44999998807907104,
+        0.44999998807907104,
+        0.054999999701976776
+      ],
+      "dimensions_mm": [
+        900.0,
+        900.0,
+        55.0
+      ],
+      "triangles": 2108,
+      "parts": 2,
+      "adaptation": "900×900×55mm；低沿55mm、盘内坡面25至38mm；盘底Z=0，非与完成面自动齐平；安装需另核降板及排水。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；木纹及混凝土复用 Poly Haven CC0；具体拼法、色号与器具非历史复刻",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F20",
+      "name_zh": "壁装淋浴五金",
+      "category": "卫浴",
+      "areas": "独立样件；未指定建筑落位",
+      "notes": "底部控制器为安装原点附近；建议整体安装到离完成面1000mm；花洒顶约2140mm；软管、控制器与喷头分件。",
+      "source": "原创住宅功能适配；沿用 R02 细管架、暖白及节制材料；无历史器具复刻主张",
+      "units": "metre",
+      "anchor": "wall back Y=0.036; install datum Z=0 at +1000mm; front=-Y",
+      "revision": "R02追加01",
+      "replacement": "新增",
+      "historical_status": "项目原创器具／家具，非历史复刻",
+      "bounds_min": [
+        -0.10499999672174454,
+        -0.3050000071525574,
+        -0.008973020128905773
+      ],
+      "bounds_max": [
+        0.24810601770877838,
+        0.035999998450279236,
+        1.14323091506958
+      ],
+      "dimensions_mm": [
+        353.1,
+        341.0,
+        1152.2
+      ],
+      "triangles": 4384,
+      "parts": 10,
+      "adaptation": "底部控制器为安装原点附近；建议整体安装到离完成面1000mm；花洒顶约2140mm；软管、控制器与喷头分件。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；木纹及混凝土复用 Poly Haven CC0；具体拼法、色号与器具非历史复刻",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F21",
+      "name_zh": "薄框壁镜600×800",
+      "category": "卫浴",
+      "areas": "独立样件；未指定建筑落位",
+      "notes": "600×800镜面，外框616×816；原点在下边缘中部；组合示例下缘1050mm，镜面朝-Y。",
+      "source": "原创住宅功能适配；沿用 R02 细管架、暖白及节制材料；无历史器具复刻主张",
+      "units": "metre",
+      "anchor": "bottom Z=0; back Y=0.002; front=-Y; mount height set externally",
+      "revision": "R02追加01",
+      "replacement": "新增",
+      "historical_status": "项目原创器具／家具，非历史复刻",
+      "bounds_min": [
+        -0.30799999833106995,
+        -0.017999999225139618,
+        0.0
+      ],
+      "bounds_max": [
+        0.30799999833106995,
+        0.0019999993965029716,
+        0.8159999847412109
+      ],
+      "dimensions_mm": [
+        616.0,
+        20.0,
+        816.0
+      ],
+      "triangles": 940,
+      "parts": 5,
+      "adaptation": "600×800镜面，外框616×816；原点在下边缘中部；组合示例下缘1050mm，镜面朝-Y。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；木纹及混凝土复用 Poly Haven CC0；具体拼法、色号与器具非历史复刻",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F22",
+      "name_zh": "毛巾架与托板600",
+      "category": "卫浴",
+      "areas": "独立样件；未指定建筑落位",
+      "notes": "600mm宽独立壁装配件；托板、挂杆及折叠织物分件；下缘为Z=0，示例安装到1050mm。",
+      "source": "原创住宅功能适配；沿用 R02 细管架、暖白及节制材料；无历史器具复刻主张",
+      "units": "metre",
+      "anchor": "bottom nominal Z=0; wall back Y=0.024; front=-Y; mount height set externally",
+      "revision": "R02追加01",
+      "replacement": "新增",
+      "historical_status": "项目原创器具／家具，非历史复刻",
+      "bounds_min": [
+        -0.30000001192092896,
+        -0.1899999976158142,
+        0.0
+      ],
+      "bounds_max": [
+        0.30000001192092896,
+        0.024000000208616257,
+        0.2880000174045563
+      ],
+      "dimensions_mm": [
+        600.0,
+        214.0,
+        288.0
+      ],
+      "triangles": 940,
+      "parts": 7,
+      "adaptation": "600mm宽独立壁装配件；托板、挂杆及折叠织物分件；下缘为Z=0，示例安装到1050mm。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；木纹及混凝土复用 Poly Haven CC0；具体拼法、色号与器具非历史复刻",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F23",
+      "name_zh": "嵌入式浴缸1700",
+      "category": "卫浴",
+      "areas": "独立样件；未指定建筑落位",
+      "notes": "1700×700×550mm；有厚度的连续外壳、盆腔、排水与溢流；周边封板可独立替换，龙头需另行定位。",
+      "source": "原创住宅功能适配；沿用 R02 细管架、暖白及节制材料；无历史器具复刻主张",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02追加01",
+      "replacement": "新增",
+      "historical_status": "项目原创器具／家具，非历史复刻",
+      "bounds_min": [
+        -0.8500000238418579,
+        -0.3499999940395355,
+        0.0
+      ],
+      "bounds_max": [
+        0.8500000238418579,
+        0.3499999940395355,
+        0.550000011920929
+      ],
+      "dimensions_mm": [
+        1700.0,
+        700.0,
+        550.0
+      ],
+      "triangles": 3064,
+      "parts": 3,
+      "adaptation": "1700×700×550mm；有厚度的连续外壳、盆腔、排水与溢流；周边封板可独立替换，龙头需另行定位。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；木纹及混凝土复用 Poly Haven CC0；具体拼法、色号与器具非历史复刻",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F24",
+      "name_zh": "木条户外躺椅",
+      "category": "户外休闲",
+      "areas": "独立样件；未指定建筑落位",
+      "notes": "约700×1813；座段高340mm；靠背为固定展示角度，板条、侧梁、支脚可分别编辑，不宣称折叠机构已实现。",
+      "source": "原创住宅功能适配；沿用 R02 细管架、暖白及节制材料；无历史器具复刻主张",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02追加01",
+      "replacement": "新增",
+      "historical_status": "项目原创器具／家具，非历史复刻",
+      "bounds_min": [
+        -0.3499999940395355,
+        -0.9435000419616699,
+        0.0
+      ],
+      "bounds_max": [
+        0.3499999940395355,
+        0.8692556023597717,
+        0.8717818856239319
+      ],
+      "dimensions_mm": [
+        700.0,
+        1812.8,
+        871.8
+      ],
+      "triangles": 9628,
+      "parts": 37,
+      "adaptation": "约700×1813；座段高340mm；靠背为固定展示角度，板条、侧梁、支脚可分别编辑，不宣称折叠机构已实现。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；木纹及混凝土复用 Poly Haven CC0；具体拼法、色号与器具非历史复刻",
+      "texture_source": "https://polyhaven.com/a/oak_veneer_01",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F25",
+      "name_zh": "帆布休闲折椅_展开",
+      "category": "户外休闲",
+      "areas": "独立样件；未指定建筑落位",
+      "notes": "约650×900；帆布连续下垂座背与木侧框；仅展开状态，连接枢轴表达，折叠运动未校核。",
+      "source": "原创住宅功能适配；沿用 R02 细管架、暖白及节制材料；无历史器具复刻主张",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02追加01",
+      "replacement": "新增",
+      "historical_status": "项目原创器具／家具，非历史复刻",
+      "bounds_min": [
+        -0.32750001549720764,
+        -0.4949621260166168,
+        0.0
+      ],
+      "bounds_max": [
+        0.32750001549720764,
+        0.441723495721817,
+        0.9282536506652832
+      ],
+      "dimensions_mm": [
+        655.0,
+        936.7,
+        928.3
+      ],
+      "triangles": 1892,
+      "parts": 10,
+      "adaptation": "约650×900；帆布连续下垂座背与木侧框；仅展开状态，连接枢轴表达，折叠运动未校核。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；木纹及混凝土复用 Poly Haven CC0；具体拼法、色号与器具非历史复刻",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F26",
+      "name_zh": "室外圆桌600",
+      "category": "户外休闲",
+      "areas": "独立样件；未指定建筑落位",
+      "notes": "直径600mm、高500mm；灰蓝金属盘面与三脚架，承托连接分件。",
+      "source": "原创住宅功能适配；沿用 R02 细管架、暖白及节制材料；无历史器具复刻主张",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02追加01",
+      "replacement": "新增",
+      "historical_status": "项目原创器具／家具，非历史复刻",
+      "bounds_min": [
+        -0.3009999990463257,
+        -0.3009999990463257,
+        0.0
+      ],
+      "bounds_max": [
+        0.3009999990463257,
+        0.3009999990463257,
+        0.5037063360214233
+      ],
+      "dimensions_mm": [
+        602.0,
+        602.0,
+        503.7
+      ],
+      "triangles": 4628,
+      "parts": 9,
+      "adaptation": "直径600mm、高500mm；灰蓝金属盘面与三脚架，承托连接分件。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；木纹及混凝土复用 Poly Haven CC0；具体拼法、色号与器具非历史复刻",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "F27",
+      "name_zh": "岩板面长凳1500",
+      "category": "户外休闲",
+      "areas": "独立样件；未指定建筑落位",
+      "notes": "1500×450×450mm；20mm浅暖灰岩板座面，下设60mm内退连续承托及双支座；支承体为浅色素面。结构及岩板产品待深化。",
+      "source": "用户2026-10-25要求：户外改大岩板；原创几何及低纹理材质",
+      "units": "metre",
+      "anchor": "floor bottom Z=0, front=-Y",
+      "revision": "R02户外岩板01",
+      "replacement": "替换同编号粗纹理版本",
+      "historical_status": "项目原创器具／家具，非历史复刻",
+      "bounds_min": [
+        -0.75,
+        -0.22499999403953552,
+        0.0
+      ],
+      "bounds_max": [
+        0.75,
+        0.22499999403953552,
+        0.44999998807907104
+      ],
+      "dimensions_mm": [
+        1500.0,
+        450.0,
+        450.0
+      ],
+      "triangles": 752,
+      "parts": 4,
+      "adaptation": "1500×450×450mm；20mm浅暖灰岩板座面，下设60mm内退连续承托及双支座；支承体为浅色素面。结构及岩板产品待深化。",
+      "references": [],
+      "license_note": "原创岩板及素面支承几何、材质；项目适配，未指定品牌产品",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "S09",
+      "name_zh": "直铺错缝木地板",
+      "category": "铺地",
+      "areas": "独立样件；未指定建筑落位",
+      "notes": "1200×1200样板；100mm板宽，600mm名义板长，1.5mm缝；18mm面层，完成面Z=0。木材种类与拼法为项目适配。",
+      "source": "https://www.fondationlecorbusier.fr/wp-content/uploads/2022/05/2049_5102.pdf",
+      "units": "metre",
+      "anchor": "finished top Z=0; panel centre XY=0; tile pitch 1.2m",
+      "revision": "R02追加01",
+      "replacement": "新增",
+      "historical_status": "材料有据，具体几何为项目适配",
+      "bounds_min": [
+        -0.5992500185966492,
+        -0.5992500185966492,
+        -0.017999999225139618
+      ],
+      "bounds_max": [
+        0.5992500185966492,
+        0.5992500185966492,
+        0.0
+      ],
+      "dimensions_mm": [
+        1198.5,
+        1198.5,
+        18.0
+      ],
+      "triangles": 5640,
+      "parts": 30,
+      "adaptation": "1200×1200样板；100mm板宽，600mm名义板长，1.5mm缝；18mm面层，完成面Z=0。木材种类与拼法为项目适配。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/wp-content/uploads/2022/05/2049_5102.pdf"
+      ],
+      "license_note": "本项目原创适配几何；木纹及混凝土复用 Poly Haven CC0；具体拼法、色号与器具非历史复刻",
+      "texture_source": "https://polyhaven.com/a/oak_veneer_01",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "S10",
+      "name_zh": "方格拼木地板",
+      "category": "铺地",
+      "areas": "独立样件；未指定建筑落位",
+      "notes": "1200×1200样板；300mm方格内3根100mm木条交替转向；18mm厚。拼法为项目选项，未据史料复原。",
+      "source": "https://www.fondationlecorbusier.fr/wp-content/uploads/2022/05/2049_5102.pdf",
+      "units": "metre",
+      "anchor": "finished top Z=0; panel centre XY=0; tile pitch 1.2m",
+      "revision": "R02追加01",
+      "replacement": "新增",
+      "historical_status": "材料有据，具体几何为项目适配",
+      "bounds_min": [
+        -0.5992500185966492,
+        -0.5992500185966492,
+        -0.017999999225139618
+      ],
+      "bounds_max": [
+        0.5992500185966492,
+        0.5992500185966492,
+        0.0
+      ],
+      "dimensions_mm": [
+        1198.5,
+        1198.5,
+        18.0
+      ],
+      "triangles": 9024,
+      "parts": 48,
+      "adaptation": "1200×1200样板；300mm方格内3根100mm木条交替转向；18mm厚。拼法为项目选项，未据史料复原。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/wp-content/uploads/2022/05/2049_5102.pdf"
+      ],
+      "license_note": "本项目原创适配几何；木纹及混凝土复用 Poly Haven CC0；具体拼法、色号与器具非历史复刻",
+      "texture_source": "https://polyhaven.com/a/oak_veneer_01",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "S11",
+      "name_zh": "200模数白色方砖",
+      "category": "铺地",
+      "areas": "独立样件；未指定建筑落位",
+      "notes": "1200×1200样板；200mm模数、198mm砖面、2mm缝；白色200方砖参照莫利托公寓材料记录，构造为适配。",
+      "source": "https://sfiic.com/wp-content/uploads/2020/06/LeCorbusier.pdf",
+      "units": "metre",
+      "anchor": "finished top Z=0; panel centre XY=0; tile pitch 1.2m",
+      "revision": "R02追加01",
+      "replacement": "新增",
+      "historical_status": "材料有据，具体几何为项目适配",
+      "bounds_min": [
+        -0.6000000238418579,
+        -0.6000000238418579,
+        -0.014000000432133675
+      ],
+      "bounds_max": [
+        0.6000000238418579,
+        0.6000000238418579,
+        0.0
+      ],
+      "dimensions_mm": [
+        1200.0,
+        1200.0,
+        14.0
+      ],
+      "triangles": 6780,
+      "parts": 37,
+      "adaptation": "1200×1200样板；200mm模数、198mm砖面、2mm缝；白色200方砖参照莫利托公寓材料记录，构造为适配。",
+      "references": [
+        "https://sfiic.com/wp-content/uploads/2020/06/LeCorbusier.pdf"
+      ],
+      "license_note": "本项目原创适配几何；木纹及混凝土复用 Poly Haven CC0；具体拼法、色号与器具非历史复刻",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "S12",
+      "name_zh": "200模数黑色炻砖",
+      "category": "铺地",
+      "areas": "独立样件；未指定建筑落位",
+      "notes": "1200×1200样板；200mm模数、2mm缝；黑色炻砖参考拉罗什1928改造，规格和颜色为项目适配。",
+      "source": "https://www.fondationlecorbusier.fr/wp-content/uploads/2022/05/2049_5102.pdf",
+      "units": "metre",
+      "anchor": "finished top Z=0; panel centre XY=0; tile pitch 1.2m",
+      "revision": "R02追加01",
+      "replacement": "新增",
+      "historical_status": "材料有据，具体几何为项目适配",
+      "bounds_min": [
+        -0.6000000238418579,
+        -0.6000000238418579,
+        -0.014000000432133675
+      ],
+      "bounds_max": [
+        0.6000000238418579,
+        0.6000000238418579,
+        0.0
+      ],
+      "dimensions_mm": [
+        1200.0,
+        1200.0,
+        14.0
+      ],
+      "triangles": 6780,
+      "parts": 37,
+      "adaptation": "1200×1200样板；200mm模数、2mm缝；黑色炻砖参考拉罗什1928改造，规格和颜色为项目适配。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/wp-content/uploads/2022/05/2049_5102.pdf"
+      ],
+      "license_note": "本项目原创适配几何；木纹及混凝土复用 Poly Haven CC0；具体拼法、色号与器具非历史复刻",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "S13",
+      "name_zh": "灰粉色连续橡胶地面",
+      "category": "铺地",
+      "areas": "独立样件；未指定建筑落位",
+      "notes": "1200×1200×4mm样板；参考拉罗什1928改造中的粉色橡胶；色号为项目适配，未作历史测色。",
+      "source": "https://www.fondationlecorbusier.fr/wp-content/uploads/2022/05/2049_5102.pdf",
+      "units": "metre",
+      "anchor": "finished top Z=0; thickness below",
+      "revision": "R02追加01",
+      "replacement": "新增",
+      "historical_status": "材料有据，具体几何为项目适配",
+      "bounds_min": [
+        -0.6000000238418579,
+        -0.6000000238418579,
+        -0.004000000189989805
+      ],
+      "bounds_max": [
+        0.6000000238418579,
+        0.6000000238418579,
+        0.0
+      ],
+      "dimensions_mm": [
+        1200.0,
+        1200.0,
+        4.0
+      ],
+      "triangles": 188,
+      "parts": 1,
+      "adaptation": "1200×1200×4mm样板；参考拉罗什1928改造中的粉色橡胶；色号为项目适配，未作历史测色。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/wp-content/uploads/2022/05/2049_5102.pdf"
+      ],
+      "license_note": "本项目原创适配几何；木纹及混凝土复用 Poly Haven CC0；具体拼法、色号与器具非历史复刻",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    },
+    {
+      "id": "S14",
+      "name_zh": "100模数湿区灰色方砖",
+      "category": "铺地",
+      "areas": "独立样件；未指定建筑落位",
+      "notes": "1200×1200样板；100mm模数、2mm缝；现代湿区适配，表面粗糙表现不代表产品防滑等级。",
+      "source": "原创住宅功能适配；沿用 R02 细管架、暖白及节制材料；无历史器具复刻主张",
+      "units": "metre",
+      "anchor": "finished top Z=0; panel centre XY=0; tile pitch 1.2m",
+      "revision": "R02追加01",
+      "replacement": "新增",
+      "historical_status": "材料有据，具体几何为项目适配",
+      "bounds_min": [
+        -0.6000000238418579,
+        -0.6000000238418579,
+        -0.014000000432133675
+      ],
+      "bounds_max": [
+        0.6000000238418579,
+        0.6000000238418579,
+        0.0
+      ],
+      "dimensions_mm": [
+        1200.0,
+        1200.0,
+        14.0
+      ],
+      "triangles": 27084,
+      "parts": 145,
+      "adaptation": "1200×1200样板；100mm模数、2mm缝；现代湿区适配，表面粗糙表现不代表产品防滑等级。",
+      "references": [
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-pavillon-de-lesprit-nouveau-paris-france-1924/",
+        "https://www.fondationlecorbusier.fr/oeuvre-architecture/realisations-maisons-la-roche-jeanneret-paris-france-1923-1925/"
+      ],
+      "license_note": "本项目原创适配几何；木纹及混凝土复用 Poly Haven CC0；具体拼法、色号与器具非历史复刻",
+      "location_note": "原始候选区标签，仅供检索；未植入建筑，也不表示最新区域适配已确认"
+    }
+  ]
+}

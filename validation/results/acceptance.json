@@ -1,0 +1,105 @@
+{
+  "status": "passed",
+  "environment": {
+    "os": "macOS 27.2",
+    "sketchup": "26.0.428",
+    "blender": "4.5.12",
+    "python": "3.12",
+    "mcp_sdk": "2.3.0"
+  },
+  "runs": {
+    "e2e/r08": {
+      "status": "passed",
+      "scope": "Fixed 6x5m pavilion task: two native candidates, predefined scheme choice, development/refinement with retained core, exact declared checks, actual native visual review and frozen portable handoff",
+      "local_record_sha256": "076033847c1e07cf4ec601a041d1bb2c99fb3bc0fe1a1c098dbc7911a691b665"
+    },
+    "e2e/r09": {
+      "status": "passed",
+      "scope": "Fixed 6x5m pavilion task: two native candidates, predefined scheme choice, development/refinement with retained core, exact declared checks, actual native visual review and frozen portable handoff",
+      "local_record_sha256": "1143f3536308a7bc65519d765203dc7a57d940857b9927fbcc0f26d77608e449"
+    },
+    "e2e/r10": {
+      "status": "passed",
+      "scope": "Fixed 6x5m pavilion task: two native candidates, predefined scheme choice, development/refinement with retained core, exact declared checks, actual native visual review and frozen portable handoff",
+      "local_record_sha256": "4f28b466b332dd3cc0240a4fdae3a3837a78018e9f82ca6b7aff96393995679d"
+    },
+    "recovery/r04": {
+      "status": "passed",
+      "scope": [
+        "simulated native user edit retained",
+        "stale revision refused",
+        "scope violation rolled back",
+        "custom native creation",
+        "native grouping/undo",
+        "third body inside aggregate bounds retained",
+        "opening/restoration",
+        "same-ID replay",
+        "real close/open"
+      ],
+      "local_record_sha256": "fea93b43ccec04ab57afc2d1a75e13a535f1de6295c52624dc38f0ddc30b7d16"
+    },
+    "recovery/r05": {
+      "status": "passed",
+      "scope": [
+        "simulated native user edit retained",
+        "stale revision refused",
+        "scope violation rolled back",
+        "custom native creation",
+        "native grouping/undo",
+        "third body inside aggregate bounds retained",
+        "opening/restoration",
+        "same-ID replay",
+        "real close/open"
+      ],
+      "local_record_sha256": "8c17eabd85963620294ebb06cf5389357dec14f84aa7e0ae1d5f72950d022f88"
+    },
+    "recovery/r06": {
+      "status": "passed",
+      "scope": [
+        "simulated native user edit retained",
+        "stale revision refused",
+        "scope violation rolled back",
+        "custom native creation",
+        "native grouping/undo",
+        "third body inside aggregate bounds retained",
+        "opening/restoration",
+        "same-ID replay",
+        "real close/open"
+      ],
+      "local_record_sha256": "caa7f108480cdcf210c8b5519d0cf4b5b3cb7459047747681237b787471f2bd6"
+    },
+    "asset-rounds/r07": {
+      "status": "passed",
+      "scope": "Original five-part table, direct base-color texture, metre scale, floor placement, native pushpull/undo and real close/reopen",
+      "local_record_sha256": "f104fc34242ad02ce33e27dd9ecf7d7a1c95962234f67b8fa1311ee299d86a79"
+    },
+    "asset-rounds/r08": {
+      "status": "passed",
+      "scope": "Original five-part table, direct base-color texture, metre scale, floor placement, native pushpull/undo and real close/reopen",
+      "local_record_sha256": "186f161488faa5655f748ff4bc06eecf8662b0e6a6694d301c96de825803f82c"
+    },
+    "asset-rounds/r09": {
+      "status": "passed",
+      "scope": "Original five-part table, direct base-color texture, metre scale, floor placement, native pushpull/undo and real close/reopen",
+      "local_record_sha256": "8d5e055855735d0e7f4902b17698f904ced97e0cdd4dbfdd3e357dbf49d864fe"
+    },
+    "gui/r01": {
+      "status": "passed",
+      "scope": null,
+      "local_record_sha256": "013b20746aff0a49dcd00428e3337a7dc1b755a81219caf410156afb779adf7d"
+    },
+    "job-recovery/r01": {
+      "status": "passed",
+      "scope": "Owned real Blender process timeout/cancel; same-ID timeout replay; no accepted output",
+      "local_record_sha256": "2801e0ba705786138d7b26dabbc069d5c55184305f93b00b9f3b70e53490f10d"
+    },
+    "job-recovery/r03": {
+      "status": "passed",
+      "scope": "Marker proves Blender Python was running before cancellation; owned Blender PID exited and no output was accepted",
+      "local_record_sha256": "c9a679d7e4846d1d3b5b945bc2e249a1ccdf42791c28aace956e5550d6bd5dc8"
+    }
+  },
+  "core_tests": 27,
+  "final_native_sha256": "8e98689f2a4e36e84da523ce6a8ff70fdae1ce2d02f2b7c99b17addfd6142a4a",
+  "limits": "Declared fixture scopes only; failed/interrupted runs are retained in the local audit and public validation notes"
+}

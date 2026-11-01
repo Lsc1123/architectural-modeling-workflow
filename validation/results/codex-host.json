@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "method": "Actual Codex app-server starts stdio MCP, discovers tools/resources and calls get_capabilities in an ephemeral protocol fixture; no model turn or persisted user chat",
+  "tools": 41,
+  "bridge_code_matches": true,
+  "expected_bridge_sha256": "8e98689f2a4e36e84da523ce6a8ff70fdae1ce2d02f2b7c99b17addfd6142a4a",
+  "limits": "SDK client executes the full native task suites separately; no Codex UI agent turn is claimed"
+}

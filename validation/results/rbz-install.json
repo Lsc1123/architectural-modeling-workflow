@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "method": "Latest packaged RBZ installed with backup; all SketchUp processes closed by user; fresh single process loads installed extension and exact code SHA, real native five-stage suite executed",
+  "version": "26.0.428",
+  "bridge_sha256": "8e98689f2a4e36e84da523ce6a8ff70fdae1ce2d02f2b7c99b17addfd6142a4a",
+  "pid": 23452
+}
