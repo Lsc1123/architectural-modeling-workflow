@@ -5,15 +5,15 @@
     "user_feedback_occurrences": 573,
     "text_unique_feedback": 489,
     "occurrences_with_same_turn_located_candidates": 417,
-    "limits": "Accessible records only; fork deduplication by turn ID. A located candidate or AI completion statement is not repair proof. Missing attachments remain gaps. Raw chats stay private."
+    "limits": "Accessible records only; fork deduplication by turn ID. A located candidate or AI completion statement is not repair proof. Missing attachments remain gaps. Raw chats stay private.",
+    "supplement": "2026-11-02 incremental active and archived index comparison, deduplicated by message ID; private details remain local. See validation/optimization-20261102.md for coverage and gaps."
   },
   "cases": [
     {
       "id": "C01",
       "feedback_summary": "探索阶段过早定功能或堆砌方案",
       "cause_inference": "空间联系尚未确认就生成交通，会固化错误前提。",
-      "revision_rule": "按问题比较少量候选，视线与可走分开；选案后才推进精度。",
-      "verification_scope": "旧候选无法逐个重建空间效果；当前反馈仅证明需要先对齐可达面。",
+      "verification_scope": "Historical audit snapshot: 旧候选无法逐个重建空间效果；当前反馈仅证明需要先对齐可达面。",
       "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
       "historical_artifacts": [
         {
@@ -28,14 +28,22 @@
           "located": true,
           "availability": "Local historical artifact; not all are redistributed"
         }
-      ]
+      ],
+      "category": "general_hard_rule",
+      "rule_refs": [
+        "R01",
+        "R06"
+      ],
+      "implementation_or_check": [
+        "Manual review of current model, user intent and saved views"
+      ],
+      "result_basis": "Historical evidence review; synthetic/native regression results are separately reported in validation/optimization-20261102.md. A located artifact is not a new geometric recalculation."
     },
     {
       "id": "C02",
       "feedback_summary": "区域身份与功能混淆",
       "cause_inference": "旧聊天或编号顺序被误当当前事实。",
-      "revision_rule": "单一底表、版本内功能与原生定位；语义改变替代旧行。",
-      "verification_scope": "当前上下文检查通过；设计合理性不由脚本认证。",
+      "verification_scope": "Historical audit snapshot: 当前上下文检查通过；设计合理性不由脚本认证。",
       "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
       "historical_artifacts": [
         {
@@ -50,14 +58,21 @@
           "located": true,
           "availability": "Local historical artifact; not all are redistributed"
         }
-      ]
+      ],
+      "category": "general_hard_rule",
+      "rule_refs": [
+        "R01"
+      ],
+      "implementation_or_check": [
+        "tests/test_state.py::test_existing_authority_remains_the_only_semantic_table"
+      ],
+      "result_basis": "Historical evidence review; synthetic/native regression results are separately reported in validation/optimization-20261102.md. A located artifact is not a new geometric recalculation."
     },
     {
       "id": "C03",
       "feedback_summary": "用户手改需要保全",
       "cause_inference": "旧生成器或磁盘副本可能覆盖窗口里的新工作。",
-      "revision_rule": "实时文档身份、未保存状态、CAS修订、事务快照及范围比较。",
-      "verification_scope": "历史窗口时点无法在本轮重现；原生导出与回退文件可定位。",
+      "verification_scope": "Historical audit snapshot: 历史窗口时点无法在本轮重现；原生导出与回退文件可定位。",
       "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
       "historical_artifacts": [
         {
@@ -72,14 +87,23 @@
           "located": true,
           "availability": "Local historical artifact; not all are redistributed"
         }
-      ]
+      ],
+      "category": "general_hard_rule",
+      "rule_refs": [
+        "R01",
+        "R10"
+      ],
+      "implementation_or_check": [
+        "tests/test_state.py::test_facts_conflicts_do_not_overwrite_user_work",
+        "scripts/validate_recovery.py"
+      ],
+      "result_basis": "Historical evidence review; synthetic/native regression results are separately reported in validation/optimization-20261102.md. A located artifact is not a new geometric recalculation."
     },
     {
       "id": "C04",
       "feedback_summary": "片拼模型不能正常编辑",
       "cause_inference": "按面碎片组织而不是可用原生构件。",
-      "revision_rule": "真实原生面环、组内编辑、撤销及保存重开独立验收。",
-      "verification_scope": "历史记录列体积编辑/恢复和保存；本轮另有真实SU样件，不能把网格封闭当UI通过。",
+      "verification_scope": "Historical audit snapshot: 历史记录列体积编辑/恢复和保存；本轮另有真实SU样件，不能把网格封闭当UI通过。",
       "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
       "historical_artifacts": [
         {
@@ -94,14 +118,21 @@
           "located": true,
           "availability": "Local historical artifact; not all are redistributed"
         }
-      ]
+      ],
+      "category": "general_hard_rule",
+      "rule_refs": [
+        "R10"
+      ],
+      "implementation_or_check": [
+        "scripts/validate_native.py"
+      ],
+      "result_basis": "Historical evidence review; synthetic/native regression results are separately reported in validation/optimization-20261102.md. A located artifact is not a new geometric recalculation."
     },
     {
       "id": "C05",
       "feedback_summary": "楼板及完成面接口",
       "cause_inference": "净空切削误侵入承托面，拆梯未同步恢复板与面层。",
-      "revision_rule": "板底、板顶、面层、梯口、旧槽、门槛联合检查，实际轮廓来自模型。",
-      "verification_scope": "当前12区回归通过；缺少旧版完整附件的反馈保留缺口。",
+      "verification_scope": "Historical audit snapshot: 当前12区回归通过；缺少旧版完整附件的反馈保留缺口。",
       "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
       "historical_artifacts": [
         {
@@ -116,14 +147,22 @@
           "located": true,
           "availability": "Local historical artifact; not all are redistributed"
         }
-      ]
+      ],
+      "category": "general_hard_rule",
+      "rule_refs": [
+        "R03",
+        "R07"
+      ],
+      "implementation_or_check": [
+        "tests/test_geometry.py::test_old_stair_slot_fails_floor_and_restoration_passes"
+      ],
+      "result_basis": "Historical evidence review; synthetic/native regression results are separately reported in validation/optimization-20261102.md. A located artifact is not a new geometric recalculation."
     },
     {
       "id": "C06",
       "feedback_summary": "门外落脚和梯口转向",
       "cause_inference": "只查门洞四角，遗漏门后的连续动作和脚下实面。",
-      "revision_rule": "门内转身—穿门—门外站稳—转向—接梯，逐段查障碍和水平支承。",
-      "verification_scope": "报告含before/after真实网格求交及未承托面积；只覆盖声明路线和人体。",
+      "verification_scope": "Historical audit snapshot: 报告含before/after真实网格求交及未承托面积；只覆盖声明路线和人体。",
       "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
       "historical_artifacts": [
         {
@@ -138,14 +177,22 @@
           "located": true,
           "availability": "Local historical artifact; not all are redistributed"
         }
-      ]
+      ],
+      "category": "general_hard_rule",
+      "rule_refs": [
+        "R04",
+        "R07"
+      ],
+      "implementation_or_check": [
+        "tests/test_geometry.py::test_door_passage_requires_actual_floor_and_body_clearance"
+      ],
+      "result_basis": "Historical evidence review; synthetic/native regression results are separately reported in validation/optimization-20261102.md. A located artifact is not a new geometric recalculation."
     },
     {
       "id": "C07",
       "feedback_summary": "碰撞修复破坏围合或防护",
       "cause_inference": "删掉相交构件时遗漏它承担的功能；部分反馈来自爆炸图表达。",
-      "revision_rule": "同时保留围合、隐私、防护、支承；图面删墙不自动回写建筑。",
-      "verification_scope": "图纸批注与模型缺陷须分开；未证明每次图面删墙均来自模型。",
+      "verification_scope": "Historical audit snapshot: 图纸批注与模型缺陷须分开；未证明每次图面删墙均来自模型。",
       "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
       "historical_artifacts": [
         {
@@ -160,14 +207,22 @@
           "located": true,
           "availability": "Local historical artifact; not all are redistributed"
         }
-      ]
+      ],
+      "category": "general_hard_rule",
+      "rule_refs": [
+        "R05"
+      ],
+      "implementation_or_check": [
+        "tests/test_geometry.py::test_guard_gap_is_not_erased_by_collision_cleanup",
+        "tests/test_geometry.py::test_intentional_contacts_are_pair_specific"
+      ],
+      "result_basis": "Historical evidence review; synthetic/native regression results are separately reported in validation/optimization-20261102.md. A located artifact is not a new geometric recalculation."
     },
     {
       "id": "C08",
       "feedback_summary": "独立房间与错层视线",
       "cause_inference": "功能名被机械翻译为通高封墙，破坏已确认空间关系。",
-      "revision_rule": "户界、房间界、临空边、视觉联系分别建模；重大空间取舍由用户决定。",
-      "verification_scope": "R09恢复开敞错层并保留交通证据；专业防护构造仍待深化。",
+      "verification_scope": "Historical audit snapshot: R09恢复开敞错层并保留交通证据；专业防护构造仍待深化。",
       "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
       "historical_artifacts": [
         {
@@ -182,14 +237,21 @@
           "located": true,
           "availability": "Local historical artifact; not all are redistributed"
         }
-      ]
+      ],
+      "category": "general_hard_rule",
+      "rule_refs": [
+        "R06"
+      ],
+      "implementation_or_check": [
+        "Manual review of current model, user intent and saved views"
+      ],
+      "result_basis": "Historical evidence review; synthetic/native regression results are separately reported in validation/optimization-20261102.md. A located artifact is not a new geometric recalculation."
     },
     {
       "id": "C09",
       "feedback_summary": "家具方向与使用动作",
       "cause_inference": "朝向、落地及操作空间未与实际使用联合推敲。",
-      "revision_rule": "组合样件先行，按坐下/拉椅/开柜/上下床等动作验证并带动灯具。",
-      "verification_scope": "报告是声明对象及动作状态；不等于完整人体连续运动。",
+      "verification_scope": "Historical audit snapshot: 报告是声明对象及动作状态；不等于完整人体连续运动。",
       "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
       "historical_artifacts": [
         {
@@ -204,14 +266,22 @@
           "located": true,
           "availability": "Local historical artifact; not all are redistributed"
         }
-      ]
+      ],
+      "category": "general_hard_rule",
+      "rule_refs": [
+        "R04"
+      ],
+      "implementation_or_check": [
+        "tests/test_geometry.py::test_floating_furniture_and_missing_host_are_detected",
+        "tests/test_geometry.py::test_pull_chair_state_hits_a_real_obstacle"
+      ],
+      "result_basis": "Historical evidence review; synthetic/native regression results are separately reported in validation/optimization-20261102.md. A located artifact is not a new geometric recalculation."
     },
     {
       "id": "C10",
       "feedback_summary": "双版变化没有说明",
       "cause_inference": "整区域豁免会掩盖非改造构件变化。",
-      "revision_rule": "共享构件按世界几何及逐面材质/UV比较；差异按具体构件与边界登记。",
-      "verification_scope": "当前版本一致性检查通过，版本专属改变保留。",
+      "verification_scope": "Historical audit snapshot: 当前版本一致性检查通过，版本专属改变保留。",
       "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
       "historical_artifacts": [
         {
@@ -226,14 +296,22 @@
           "located": true,
           "availability": "Local historical artifact; not all are redistributed"
         }
-      ]
+      ],
+      "category": "general_hard_rule",
+      "rule_refs": [
+        "R09"
+      ],
+      "implementation_or_check": [
+        "tests/test_state.py::test_one_variant_and_one_route_cannot_pass_the_other_variant",
+        "tests/test_optimization.py::test_variant_lineage_needs_recorded_history"
+      ],
+      "result_basis": "Historical evidence review; synthetic/native regression results are separately reported in validation/optimization-20261102.md. A located artifact is not a new geometric recalculation."
     },
     {
       "id": "C11",
       "feedback_summary": "跨软件资产与材质",
       "cause_inference": "原点、单位、材质及许可未形成可复用接口。",
-      "revision_rule": "独立Blender进程、可编辑源、安装基准、素材许可、SU实际导入和编辑。",
-      "verification_scope": "本轮已读来源记录；新MCP样件的完整往返另有失败与修复回执。",
+      "verification_scope": "Historical audit snapshot: 本轮已读来源记录；新MCP样件的完整往返另有失败与修复回执。",
       "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
       "historical_artifacts": [
         {
@@ -248,14 +326,21 @@
           "located": true,
           "availability": "Local historical artifact; not all are redistributed"
         }
-      ]
+      ],
+      "category": "general_hard_rule",
+      "rule_refs": [
+        "R10"
+      ],
+      "implementation_or_check": [
+        "scripts/validate_asset.py"
+      ],
+      "result_basis": "Historical evidence review; synthetic/native regression results are separately reported in validation/optimization-20261102.md. A located artifact is not a new geometric recalculation."
     },
     {
       "id": "C12",
       "feedback_summary": "出图、漫游、打印暴露模型问题",
       "cause_inference": "派生表达与真实建筑事实可能混用，制造分件不等于主模型组织。",
-      "revision_rule": "同一冻结来源派生；复杂平面/关键剖面试读；派生几何更正返回受影响阶段。",
-      "verification_scope": "图面清晰度、实体试印、自由飞行、实际步行分别报告。",
+      "verification_scope": "Historical audit snapshot: 图面清晰度、实体试印、自由飞行、实际步行分别报告。",
       "evidence_gap": "附件和旧版窗口若无法定位，不以AI声明补齐；候选映射不是因果验证。",
       "historical_artifacts": [
         {
@@ -270,7 +355,50 @@
           "located": true,
           "availability": "Local historical artifact; not all are redistributed"
         }
-      ]
+      ],
+      "category": "general_hard_rule",
+      "rule_refs": [
+        "R02",
+        "R10"
+      ],
+      "implementation_or_check": [
+        "Manual review of current model, user intent and saved views"
+      ],
+      "result_basis": "Historical evidence review; synthetic/native regression results are separately reported in validation/optimization-20261102.md. A located artifact is not a new geometric recalculation."
+    },
+    {
+      "id": "C13",
+      "feedback_summary": "New neighboring obstacle invalidates a previous spatial pass",
+      "category": "general_hard_rule",
+      "rule_refs": [
+        "R08"
+      ],
+      "implementation_or_check": [
+        "src/amw/checks.py::inheritance_diff",
+        "tests/test_optimization.py::test_new_neighbor_invalidates_spatial_inheritance"
+      ],
+      "result_basis": "Synthetic geometry recomputation: old route passes; added wall blocks the same body; inheritance refuses the changed environment."
+    }
+  ],
+  "rule_source": "skills/architectural-modeling-workflow/references/hard-rules.md",
+  "classification_examples": [
+    {
+      "category": "project_constraint",
+      "example": "Current region function, elevation and household relationships",
+      "destination": "Project authoritative fact table",
+      "generalize": false
+    },
+    {
+      "category": "default_recommendation",
+      "example": "Consider beds and cabinets against walls first; permit a reasoned alternative",
+      "destination": "hard-rules.md recommendations",
+      "generalize": false
+    },
+    {
+      "category": "aesthetic_choice",
+      "example": "Material colors, guard style, illustration style and number of saved views",
+      "destination": "Project decisions or examples",
+      "generalize": false
     }
   ]
 }

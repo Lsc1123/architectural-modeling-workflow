@@ -8,6 +8,12 @@ from .io import atomic, read, within, token, lock, sha
 from .jobs import adapter_path
 
 
+class SnapshotUnavailable(RuntimeError):
+    def __init__(self, receipt):
+        self.receipt = receipt
+        super().__init__('Native snapshot has not completed')
+
+
 class Native:
     def __init__(self, workspace):
         self.root = Path(workspace).expanduser().resolve()
@@ -56,6 +62,16 @@ class Native:
             raise ValueError('Operation ID belongs to different client arguments')
         return dict(self.poll(operation_id),operation_id=operation_id,replayed=True)
 
+    def prepare_geometry(self, operation_id, client_arguments, expected_revision):
+        """Recover before exporting a changing snapshot, then check its revision."""
+        recovered = self.recover(operation_id, client_arguments)
+        if recovered:
+            return recovered, None
+        snapshot = self.snapshot('.amw/geometry/' + token(operation_id) + '_before.json')
+        if snapshot['document']['revision'] != expected_revision:
+            raise ValueError('Snapshot revision changed; reread the current document')
+        return None, snapshot
+
     def poll(self, operation_id):
         base = self.runtime / 'operations' / token(operation_id)
         if not base.exists():
@@ -93,5 +109,5 @@ class Native:
     def snapshot(self, relative_path='.amw/geometry/current.json'):
         result = self.call('export', {'path': relative_path})
         if result['status'] != 'completed':
-            raise RuntimeError(result)
+            raise SnapshotUnavailable(result)
         return read(within(self.root, relative_path))

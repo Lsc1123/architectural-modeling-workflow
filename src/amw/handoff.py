@@ -1,9 +1,10 @@
 """Immutable, source-bound handoff packages for the next drawing workflow."""
 import shutil
 from pathlib import Path
-from .io import within, read, sha, atomic, utc
+from .io import within, sha, atomic, utc
 from .project import Project
 from .checks import geometry
+from .evidence import evidence_current
 
 
 def export_handoff(workspace, destination, geometry_path, model_paths):
@@ -32,9 +33,7 @@ def export_handoff(workspace, destination, geometry_path, model_paths):
         if texture.get('path'):bind(texture['path'],texture['sha256'])
     active=[];stale=[];semantic=project.semantic_digest()
     for e in data['evidence']:
-        try:
-            current=sha(within(root,e['report']))==e['sha256'] and all(sha(within(root,s['path']))==s['sha256'] for s in e['sources']) and e.get('semantic_basis_sha256')==semantic
-        except OSError:current=False
+        current = evidence_current(root, e, semantic, data.get('authority'))
         if current:
             bind(e['report'],e['sha256'])
             for s in e['sources']:bind(s['path'],s['sha256'])

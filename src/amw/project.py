@@ -5,6 +5,7 @@ import hashlib
 import json
 from pathlib import Path
 from .io import atomic, read, sha, utc, within, lock
+from .evidence import sources_current, evidence_current
 
 STAGES = ('exploration', 'selection', 'development', 'refinement', 'handoff')
 GATES = {
@@ -91,6 +92,22 @@ class Project:
         basis['decisions']=[d for d in data['decisions'] if d['kind'] in ('constraint','spatial_change') and d['status']=='current']
         return hashlib.sha256(json.dumps(basis,sort_keys=True,ensure_ascii=False).encode()).hexdigest()
 
+    def same_model_lineage(self, before_path, after_path):
+        """Different files need a recorded common model label, never a guessed variant."""
+        before = within(self.root, before_path)
+        after = within(self.root, after_path)
+        if before == after:
+            return True
+        data = self.get()
+        records = [data]
+        for entry in data.get('history', []):
+            records.append(read(within(self.root, entry['parent_snapshot'])))
+        def labels(path):
+            return {label for record in records for label, model in record['models'].items()
+                    if within(self.root, model['path']) == path}
+        a, b = labels(before), labels(after)
+        return len(a) == len(b) == 1 and a == b
+
     def link_authority(self,expected_revision,path,reason):
         source=within(self.root,path);content=read(source);digest=sha(source)
         data=self.get()
@@ -144,9 +161,8 @@ class Project:
             raise ValueError('Evidence requires kind, status, explicit scope, method and bound sources')
         if not row['scope'] or not row['sources']:
             raise ValueError('Empty scope or unbound evidence cannot pass a stage')
-        for src in row['sources']:
-            if sha(within(self.root, src['path'])) != src['sha256']:
-                raise ValueError('Evidence source changed; rerun the actual check')
+        if not sources_current(self.root, row['sources']):
+            raise ValueError('Evidence source changed; rerun the actual check')
         record = dict(id=str(uuid.uuid4()), report=str(path.relative_to(self.root)),
                       sha256=sha(path), kind=row['kind'], status=row['status'],
                       scope=row['scope'], sources=row['sources'], coverage=row.get('coverage','fresh'), at=utc())
@@ -179,12 +195,7 @@ class Project:
         semantic=self.semantic_digest();cache={}
         def valid(e):
             if e['id'] in cache:return cache[e['id']]
-            try:
-                current = sha(within(self.root, e['report'])) == e['sha256'] and all(
-                    sha(within(self.root, s['path'])) == s['sha256'] for s in e['sources'])
-            except OSError:
-                current = False
-            result=e['status']=='passed' and current and e.get('semantic_basis_sha256')==semantic and (not authority or e.get('context_sha256')==authority['sha256'])
+            result = e['status'] == 'passed' and evidence_current(self.root, e, semantic, authority)
             cache[e['id']]=result;return result
         labels=data['models'] if target in ('development','refinement','handoff') and data['models'] else {'project':None}
         for label,model in labels.items():

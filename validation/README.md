@@ -1,4 +1,10 @@
-# 验证范围 · v0.1.0
+# 验证范围
+
+当前正式版验收见 [v0.1.1 发布验收](release-0.1.1.md)，本轮流程优化的详细范围见 [优化验证](optimization-20261102.md)。
+
+## v0.1.0 历史验收
+
+以下为原 v0.1.0 时点记录，`results/` 中原有报告仍属于该版本；不是 v0.1.1 的重新验收声明。
 
 本机实测环境：macOS 27.2、SketchUp 26.0.428、Blender 4.5.12、Python 3.12、官方 MCP Python SDK 2.3.0。记录以 2026-11-01 本地验收为准；Linux CI 仅运行核心/协议测试，其他 SketchUp/Blender 版本和 Windows 未验证。
 

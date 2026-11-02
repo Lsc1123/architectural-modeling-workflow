@@ -2,7 +2,7 @@
 
 用自然语言协作推进建筑方案：**前期探索 → 选定方案 → 深入推敲 → 最终精修 → 出图交接**。SketchUp 承担建筑主模型，Blender 在独立进程中制作和续改可编辑资产，MCP 负责实际执行、项目状态、核查与恢复。
 
-[English](docs/README.en.md) · [阶段与示例](docs/workflow.md) · [工具协议](docs/protocol.md) · [验证范围](validation/README.md) · [许可证](LICENSING.md)
+[v0.1.1 下载与更新说明](https://github.com/Lsc1123/architectural-modeling-workflow/releases/tag/v0.1.1) · [English](docs/README.en.md) · [阶段与示例](docs/workflow.md) · [工具协议](docs/protocol.md) · [验证范围](validation/README.md) · [许可证](LICENSING.md)
 
 ## 能完成什么
 
@@ -16,7 +16,7 @@
 
 ## 安装（macOS 首发）
 
-需要 Python **3.12**、SketchUp 桌面版和 Blender。首版验收目标为 SketchUp **26.0.428** 与 Blender **4.5.12**；其他环境分别列验证状态。应用不随仓库分发。
+需要 Python **3.12**、SketchUp 桌面版和 Blender。当前验收目标为 SketchUp **26.0.428** 与 Blender **4.5.12**；其他环境分别列验证状态。应用不随仓库分发。
 
 ```bash
 git clone https://github.com/Lsc1123/architectural-modeling-workflow.git
@@ -27,7 +27,7 @@ python3.12 -m venv .venv
 .venv/bin/python scripts/package_release.py
 ```
 
-1. 在 SU **扩展程序管理器 → 安装扩展** 中选择 `dist/amw-sketchup-0.1.0.rbz`；也可使用带备份的 `scripts/install_sketchup.py`。这是未签名的本地开发扩展，不要为它降低系统安全设置。
+1. 在 SU **扩展程序管理器 → 安装扩展** 中选择 `dist/amw-sketchup-0.1.1.rbz`；也可使用带备份的 `scripts/install_sketchup.py`。这是未签名的本地开发扩展，不要为它降低系统安全设置。
 2. 重启 SU，打开要接续的模型，选择 **扩展 → AMW → Connect project** 并选择项目工作目录。
 3. 添加 stdio 服务。下方解释器和工作目录须替换为本机实际路径：
 
@@ -50,7 +50,7 @@ MCP 服务不需要独立的 LLM API 密钥。可信 Ruby/Python 脚本拥有原
 
 > 在 Blender 独立文件中制作可续改的桌椅资产。记录尺寸、原点、朝向、安装基准和许可，导入 SU 后检查落地、拉椅和通道，最后保存重开。
 
-已有项目直接从实际阶段进入。阶段模板和完整规则见 [工作流](docs/workflow.md) 与技能目录。
+已有项目直接从实际阶段进入。日常修改只走一次“现状与范围 → 修改 → 本体及邻接核查 → 必要写回 → 保存重读与显示核对 → 简短交付”；完整交接包留给明确交接。阶段模板和完整规则见 [工作流](docs/workflow.md) 与技能目录。
 
 ## 恢复与证据
 
@@ -62,12 +62,13 @@ MCP 服务不需要独立的 LLM API 密钥。可信 Ruby/Python 脚本拥有原
 
 ```bash
 .venv/bin/python -m pytest -q
-.venv/bin/python scripts/package_release.py
 .venv/bin/python -m build
+.venv/bin/python scripts/package_release.py
+.venv/bin/python scripts/verify_release.py
 ```
 
 `src/amw/` 为状态、协议与几何检查；`adapters/` 为软件适配；`skills/` 为协作方法。真实软件测试在独立工作区显式运行，普通 CI 不启动用户应用。见 [贡献说明](CONTRIBUTING.md)。
 
-Plan E Unified、Split 使用独立发布副本，完整模型及精选证据通过 Release 提供；案例保留未决项，不将历史“完成”声明当作验收。[案例索引](examples/README.md)。原始聊天仅留本地。
+Plan E Unified、Split 使用独立发布副本，完整模型及精选证据继续使用 [v0.1.0 案例附件](https://github.com/Lsc1123/architectural-modeling-workflow/releases/tag/v0.1.0)；案例保留未决项，不将历史“完成”声明当作验收。[案例索引](examples/README.md)。原始聊天仅留本地。
 
 核心/MCP/SU 为 MIT；调用 `bpy` 的部分为 GPL；原创模型/案例为 CC0，第三方资源保留原许可。见 [许可映射](LICENSING.md)。

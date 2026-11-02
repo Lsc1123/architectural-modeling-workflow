@@ -1,6 +1,5 @@
 """Package verified, owner-authorized cases without private runtime logs."""
 import argparse
-import json
 import shutil
 import zipfile
 from pathlib import Path

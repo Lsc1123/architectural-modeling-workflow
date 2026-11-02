@@ -5,7 +5,6 @@ import hashlib
 import json
 import math
 import runpy
-import shutil
 import sys
 import traceback
 import xml.etree.ElementTree as ET

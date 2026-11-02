@@ -3,7 +3,6 @@
 Not a generic project generator and never edits the production design.
 """
 import argparse
-import json
 import re
 import shutil
 import time

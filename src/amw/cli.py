@@ -2,7 +2,6 @@ import argparse
 import importlib.metadata
 import json
 import platform
-import shutil
 import sys
 from pathlib import Path
 from . import __version__

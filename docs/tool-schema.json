@@ -5,21 +5,26 @@
       "name": "get_capabilities",
       "description": "Inspect actual software connection, units, stages and validation limits.",
       "inputSchema": {
-        "type": "object",
         "properties": {},
-        "title": "get_capabilitiesArguments"
+        "title": "get_capabilitiesArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "get_capabilitiesDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
       }
     },
     {
       "name": "project_init",
       "description": "Create one current fact record; existing projects are never overwritten.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "name": {
             "title": "Name",
@@ -51,33 +56,45 @@
         "required": [
           "name"
         ],
-        "title": "project_initArguments"
+        "title": "project_initArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "project_initDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "project_get",
       "description": "Read current facts, decisions, checks, pending issues and revision.",
       "inputSchema": {
-        "type": "object",
         "properties": {},
-        "title": "project_getArguments"
+        "title": "project_getArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "project_getDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
       }
     },
     {
       "name": "project_link_authority",
       "description": "Link an existing JSON fact table as sole semantic authority. Refresh only after reading/reconciling its actual changes.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "expected_revision": {
             "title": "Expected Revision",
@@ -97,19 +114,25 @@
           "path",
           "change_summary"
         ],
-        "title": "project_link_authorityArguments"
+        "title": "project_link_authorityArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "project_link_authorityDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "project_update",
       "description": "Update current regions/relations/models, retaining revision history. Dimensions use metres.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "expected_revision": {
             "title": "Expected Revision",
@@ -130,19 +153,25 @@
           "changes",
           "reason"
         ],
-        "title": "project_updateArguments"
+        "title": "project_updateArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "project_updateDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "decision_record",
       "description": "Record the actual user decision with a retrievable source; never invent user approval.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "expected_revision": {
             "title": "Expected Revision",
@@ -191,19 +220,25 @@
           "statement",
           "user_source"
         ],
-        "title": "decision_recordArguments"
+        "title": "decision_recordArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "decision_recordDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "stage_check",
       "description": "List stage conditions, stale evidence and required user decisions.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "target": {
             "enum": [
@@ -220,19 +255,25 @@
         "required": [
           "target"
         ],
-        "title": "stage_checkArguments"
+        "title": "stage_checkArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "stage_checkDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
       }
     },
     {
       "name": "stage_advance",
       "description": "Advance one stage only after evidence and design decision conditions are met.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "expected_revision": {
             "title": "Expected Revision",
@@ -258,19 +299,25 @@
           "target",
           "reason"
         ],
-        "title": "stage_advanceArguments"
+        "title": "stage_advanceArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "stage_advanceDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "stage_reopen",
       "description": "Return to an affected earlier stage without erasing facts or old evidence.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "expected_revision": {
             "title": "Expected Revision",
@@ -296,19 +343,25 @@
           "target",
           "reason"
         ],
-        "title": "stage_reopenArguments"
+        "title": "stage_reopenArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "stage_reopenDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "evidence_register",
       "description": "Read and bind a real scoped report and its current source files. Does not prove its assertions.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "expected_revision": {
             "title": "Expected Revision",
@@ -323,33 +376,45 @@
           "expected_revision",
           "report"
         ],
-        "title": "evidence_registerArguments"
+        "title": "evidence_registerArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "evidence_registerDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_state",
       "description": "Inspect actual document identity, unsaved changes, disk drift, scene and live revision.",
       "inputSchema": {
-        "type": "object",
         "properties": {},
-        "title": "sketchup_stateArguments"
+        "title": "sketchup_stateArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_stateDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_new",
       "description": "Create a new saved workspace document only after preserving any current unsaved work.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "path": {
             "title": "Path",
@@ -369,19 +434,25 @@
           "expected_revision",
           "operation_id"
         ],
-        "title": "sketchup_newArguments"
+        "title": "sketchup_newArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_newDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_open",
       "description": "Open a saved workspace document; refuses to switch away from unsaved work.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "path": {
             "title": "Path",
@@ -401,19 +472,25 @@
           "expected_revision",
           "operation_id"
         ],
-        "title": "sketchup_openArguments"
+        "title": "sketchup_openArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_openDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_query",
       "description": "Find native instances and identities without dumping all geometry. Use IDs for editing.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "ids": {
             "anyOf": [
@@ -453,19 +530,25 @@
             "type": "integer"
           }
         },
-        "title": "sketchup_queryArguments"
+        "title": "sketchup_queryArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_queryDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_create",
       "description": "Create one editable native solid. Floor polygon Z is its structural bottom; choose finished-face conventions explicitly.",
       "inputSchema": {
-        "type": "object",
         "$defs": {
           "Box": {
             "additionalProperties": false,
@@ -648,19 +731,25 @@
           "expected_revision",
           "operation_id"
         ],
-        "title": "sketchup_createArguments"
+        "title": "sketchup_createArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_createDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_transform",
       "description": "Apply a world-space column-major affine matrix once; translation is metres.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "ids": {
             "items": {
@@ -691,19 +780,25 @@
           "expected_revision",
           "operation_id"
         ],
-        "title": "sketchup_transformArguments"
+        "title": "sketchup_transformArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_transformDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_delete",
       "description": "Delete declared objects. Explain preserved/replaced enclosure, support and protection; recheck old openings and finishes.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "ids": {
             "items": {
@@ -739,19 +834,25 @@
           "operation_id",
           "functional_reason"
         ],
-        "title": "sketchup_deleteArguments"
+        "title": "sketchup_deleteArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_deleteDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_material",
       "description": "Assign a local material without recoloring unrelated users of an existing material.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "ids": {
             "items": {
@@ -792,19 +893,25 @@
           "expected_revision",
           "operation_id"
         ],
-        "title": "sketchup_materialArguments"
+        "title": "sketchup_materialArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_materialDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_opening",
       "description": "Cut only specified actual hosts. Stores original hosts and post-state for guarded restoration.",
       "inputSchema": {
-        "type": "object",
         "$defs": {
           "Box": {
             "additionalProperties": false,
@@ -922,19 +1029,25 @@
           "expected_revision",
           "operation_id"
         ],
-        "title": "sketchup_openingArguments"
+        "title": "sketchup_openingArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_openingDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_restore_opening",
       "description": "Restore recorded host geometry only if the post-cut host has not changed.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "opening_id": {
             "title": "Opening Id",
@@ -954,19 +1067,25 @@
           "expected_revision",
           "operation_id"
         ],
-        "title": "sketchup_restore_openingArguments"
+        "title": "sketchup_restore_openingArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_restore_openingDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_combine",
       "description": "Union explicit solid instances; preserves actual cavities. Inputs are replaced transactionally.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "ids": {
             "items": {
@@ -994,19 +1113,25 @@
           "expected_revision",
           "operation_id"
         ],
-        "title": "sketchup_combineArguments"
+        "title": "sketchup_combineArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_combineDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_group",
       "description": "Group explicit root-level sibling instances without boolean rebuilding their geometry/materials.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "ids": {
             "items": {
@@ -1034,19 +1159,25 @@
           "expected_revision",
           "operation_id"
         ],
-        "title": "sketchup_groupArguments"
+        "title": "sketchup_groupArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_groupDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_script",
       "description": "Run trusted workspace Ruby inside a native transaction. Do not manage transactions or change documents/edit context in scripts. Declare existing geometry scopes, any new roots and scene names. This is code execution, not an OS sandbox.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "script": {
             "title": "Script",
@@ -1092,19 +1223,25 @@
           "operation_id",
           "purpose"
         ],
-        "title": "sketchup_scriptArguments"
+        "title": "sketchup_scriptArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_scriptDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": true
       }
     },
     {
       "name": "sketchup_save",
       "description": "Save the authoritative current document; another existing output is never overwritten.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "path": {
             "title": "Path",
@@ -1124,19 +1261,25 @@
           "expected_revision",
           "operation_id"
         ],
-        "title": "sketchup_saveArguments"
+        "title": "sketchup_saveArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_saveDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_edit_context",
       "description": "Enter a native instance editing path, or exit to the model when id is null. Finish any current GUI gesture before changing context; final save requires the root context.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "expected_revision": {
             "title": "Expected Revision",
@@ -1163,19 +1306,25 @@
           "expected_revision",
           "operation_id"
         ],
-        "title": "sketchup_edit_contextArguments"
+        "title": "sketchup_edit_contextArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_edit_contextDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_undo",
       "description": "Undo across a distinct native event-loop turn, then query/compare the result.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "expected_revision": {
             "title": "Expected Revision",
@@ -1190,19 +1339,25 @@
           "expected_revision",
           "operation_id"
         ],
-        "title": "sketchup_undoArguments"
+        "title": "sketchup_undoArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_undoDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_reopen",
       "description": "Reopen a saved workspace model only when the native window has no unsaved edits, then export and compare.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "expected_revision": {
             "title": "Expected Revision",
@@ -1217,19 +1372,25 @@
           "expected_revision",
           "operation_id"
         ],
-        "title": "sketchup_reopenArguments"
+        "title": "sketchup_reopenArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_reopenDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_probe_pushpull",
       "description": "Temporarily push/pull a real upward native face. Undo in a separate call and verify restoration before saving.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "id": {
             "title": "Id",
@@ -1254,19 +1415,25 @@
           "expected_revision",
           "operation_id"
         ],
-        "title": "sketchup_probe_pushpullArguments"
+        "title": "sketchup_probe_pushpullArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_probe_pushpullDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_export",
       "description": "Export actual world geometry, native face rings, UV, materials, instance paths and scenes.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "path": {
             "default": ".amw/geometry/current.json",
@@ -1274,19 +1441,25 @@
             "type": "string"
           }
         },
-        "title": "sketchup_exportArguments"
+        "title": "sketchup_exportArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_exportDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_capture",
       "description": "Capture the actual current native view for visual review; an image is not a geometry certificate.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "path": {
             "title": "Path",
@@ -1311,19 +1484,25 @@
         "required": [
           "path"
         ],
-        "title": "sketchup_captureArguments"
+        "title": "sketchup_captureArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_captureDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_scene",
       "description": "Select an existing scene or save one explicitly requested camera; does not create diagnostic scene clutter.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "expected_revision": {
             "title": "Expected Revision",
@@ -1375,19 +1554,25 @@
           "expected_revision",
           "operation_id"
         ],
-        "title": "sketchup_sceneArguments"
+        "title": "sketchup_sceneArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_sceneDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "sketchup_import",
       "description": "Import a workspace asset through SketchUp's native importer; inspect units and editability afterwards.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "path": {
             "title": "Path",
@@ -1443,19 +1628,25 @@
           "expected_revision",
           "operation_id"
         ],
-        "title": "sketchup_importArguments"
+        "title": "sketchup_importArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "sketchup_importDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "native_job_status",
       "description": "Resume the same native operation; never create a second write after a timeout.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "operation_id": {
             "title": "Operation Id",
@@ -1470,19 +1661,25 @@
         "required": [
           "operation_id"
         ],
-        "title": "native_job_statusArguments"
+        "title": "native_job_statusArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "native_job_statusDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
       }
     },
     {
       "name": "native_job_cancel",
       "description": "Cancel a queued operation. Running native transactions finish atomically.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "operation_id": {
             "title": "Operation Id",
@@ -1492,19 +1689,25 @@
         "required": [
           "operation_id"
         ],
-        "title": "native_job_cancelArguments"
+        "title": "native_job_cancelArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "native_job_cancelDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "asset_build",
       "description": "Create/continue an independent editable Blender asset. Supply asset_id, new blend/glb/dae/preview paths, parts or trusted script, anchor and license sources.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "specification": {
             "additionalProperties": true,
@@ -1520,19 +1723,25 @@
           "specification",
           "operation_id"
         ],
-        "title": "asset_buildArguments"
+        "title": "asset_buildArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "asset_buildDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": true
       }
     },
     {
       "name": "asset_job_status",
       "description": "Return durable worker status, Blender exit code and saved/reimport verification.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "operation_id": {
             "title": "Operation Id",
@@ -1542,19 +1751,25 @@
         "required": [
           "operation_id"
         ],
-        "title": "asset_job_statusArguments"
+        "title": "asset_job_statusArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "asset_job_statusDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": true,
+        "destructiveHint": false,
+        "idempotentHint": true,
+        "openWorldHint": false
       }
     },
     {
       "name": "asset_job_cancel",
       "description": "Cancel only this server-owned Blender worker group; incomplete outputs are invalid.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "operation_id": {
             "title": "Operation Id",
@@ -1564,19 +1779,25 @@
         "required": [
           "operation_id"
         ],
-        "title": "asset_job_cancelArguments"
+        "title": "asset_job_cancelArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "asset_job_cancelDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "checks_run",
       "description": "Compute actual geometry checks. Inputs are IDs/contours/routes and project dimensions, not preset compliance rules.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "kind": {
             "enum": [
@@ -1613,19 +1834,25 @@
           "parameters",
           "report_path"
         ],
-        "title": "checks_runArguments"
+        "title": "checks_runArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "checks_runDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "evidence_inherit",
       "description": "Inherit only a check whose declared dependencies are actually unchanged and semantic basis is unchanged. Missing dependencies cannot be guessed.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "old_report_path": {
             "title": "Old Report Path",
@@ -1650,19 +1877,25 @@
           "after_geometry_path",
           "report_path"
         ],
-        "title": "evidence_inheritArguments"
+        "title": "evidence_inheritArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "evidence_inheritDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "drawing_read_slice",
       "description": "Read handoff geometry into a plan/section cut-segment draft; final drawing stays in the next workflow.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "geometry_path": {
             "title": "Geometry Path",
@@ -1716,19 +1949,25 @@
           "normal",
           "x_axis"
         ],
-        "title": "drawing_read_sliceArguments"
+        "title": "drawing_read_sliceArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "drawing_read_sliceDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": true,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
     },
     {
       "name": "handoff_export",
       "description": "Freeze a stage-approved handoff with source hashes, actual geometry and explicit unverified scope.",
       "inputSchema": {
-        "type": "object",
         "properties": {
           "destination": {
             "title": "Destination",
@@ -1751,21 +1990,20 @@
           "geometry_path",
           "model_paths"
         ],
-        "title": "handoff_exportArguments"
+        "title": "handoff_exportArguments",
+        "type": "object"
       },
       "outputSchema": {
         "additionalProperties": true,
         "title": "handoff_exportDictOutput",
         "type": "object"
+      },
+      "annotations": {
+        "readOnlyHint": false,
+        "destructiveHint": false,
+        "idempotentHint": false,
+        "openWorldHint": false
       }
-    }
-  ],
-  "resources": [
-    {
-      "name": "current_project",
-      "uri": "amw://project",
-      "description": "",
-      "mimeType": "text/plain"
     }
   ]
 }

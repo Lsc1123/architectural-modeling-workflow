@@ -4,7 +4,6 @@ import sys
 import traceback
 from pathlib import Path
 from .io import atomic, read, within, sha, utc, lock
-from .jobs import adapter_path
 
 
 def main():

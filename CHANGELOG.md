@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.1.1 — 2026-11-02
+
+- Shared evidence freshness and geometry request recovery; conservative spatial-neighbor and variant-lineage inheritance checks.
+- MCP image content alongside legacy capture receipts, explicit tool annotations and actionable expected-error/timeout feedback.
+- Shorter daily workflow and iteration card, canonical hard rules, classified historical lessons and on-demand SketchUp API references.
+- Orthographic camera snapshots avoid reading perspective-only FOV; shared camera serialization prevents repeated native console warnings.
+- Versioned distribution names, complete checksum coverage and archive-content validation in CI.
+- Compatibility: all 41 tool names and input/output schemas retained; optional report check_type added.
+
+
+
 ## 0.1.0
 
 - Five distinct architectural stages, existing-project takeover, superseding decisions and variant/scope-specific evidence gates.

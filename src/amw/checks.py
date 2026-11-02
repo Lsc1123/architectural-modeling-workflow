@@ -223,6 +223,43 @@ def scope_diff(before, after, allowed_ids):
                 coordinate_precision_m=1e-9,comparison='Canonical oriented face rings and applied UV/material; ignores session IDs, face enumeration and unused untextured UV')
 
 
+def inheritance_diff(before, after, dependencies, kind):
+    """Local topology may be inherited locally; spatial checks need unchanged surroundings.
+
+    Existing reports have no certified spatial influence envelope. Conservatively
+    compare all exported surroundings for spatial checks, including new objects,
+    rather than assuming the old obstacle list is still complete. This can require
+    a rerun for a distant change; it never broadens the original check's scope.
+    """
+    if kind != 'topology':
+        return scope_diff(before, after, [])
+    def subset(g):
+        return dict(g, objects=select(g, dependencies),
+                    instances=[o for o in g.get('instances', []) if o['id'] in dependencies],
+                    scenes=[], sections=[])
+    return scope_diff(subset(before), subset(after), [])
+
+
+def run_check(kind, g, parameters):
+    """Run a single-model check and return its explicit object dependencies."""
+    functions = {'topology': topology, 'collisions': collisions, 'floor': floor_interface,
+                 'passage': passage, 'treads': treads, 'support': support,
+                 'actions': actions, 'protection': protection}
+    result = functions[kind](g, **parameters)
+    if kind == 'topology':
+        ids = [o['id'] for o in select(g, parameters.get('ids'))]
+    elif kind == 'collisions':
+        ids = [i for pair in parameters['pairs'] for i in pair]
+    elif kind == 'floor':
+        ids = parameters['floor_ids']
+    else:
+        ids = [i for c in parameters['cases'] for k, values in c.items()
+               if k.endswith('_ids') for i in values]
+        if kind == 'treads':
+            ids += [i for c in parameters['cases'] for step in c['treads'] for i in step['floor_ids']]
+    return result, sorted(set(ids))
+
+
 def support(g, cases, tolerance_m=1e-5):
     """Actual horizontal contact faces, including separate furniture feet."""
     rows=[]

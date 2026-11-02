@@ -2,6 +2,7 @@
 import argparse
 import hashlib
 import json
+import tomllib
 import zipfile
 from pathlib import Path
 
@@ -16,11 +17,12 @@ def archive(path, entries):
 def main():
     p=argparse.ArgumentParser();p.add_argument('--out',default='dist');a=p.parse_args()
     root=Path(__file__).resolve().parents[1];out=Path(a.out).resolve();out.mkdir(parents=True,exist_ok=True)
-    archive(out/'amw-sketchup-0.1.0.rbz',[
+    version=tomllib.loads((root/'pyproject.toml').read_text())['project']['version']
+    archive(out/f'amw-sketchup-{version}.rbz',[
         ('amw.rb',root/'adapters/sketchup/amw.rb'),
         ('amw/amw_bridge.rb',root/'adapters/sketchup/amw_bridge.rb'),('amw/LICENSE',root/'LICENSE')])
     skill=root/'skills/architectural-modeling-workflow'
-    archive(out/'architectural-modeling-workflow-skill-0.1.0.zip',[
+    archive(out/f'architectural-modeling-workflow-skill-{version}.zip',[
         ('architectural-modeling-workflow/'+str(f.relative_to(skill)),f) for f in skill.rglob('*')
         if f.is_file() and '__pycache__' not in f.parts])
     manifest={p.name:hashlib.sha256(p.read_bytes()).hexdigest() for p in out.iterdir() if p.is_file() and p.suffix in {'.whl','.gz','.rbz','.zip'}}

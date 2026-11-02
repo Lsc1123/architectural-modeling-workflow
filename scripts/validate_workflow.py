@@ -5,12 +5,9 @@ review, then run --finish. Use only an isolated disposable workspace.
 """
 import argparse
 import asyncio
-import itertools
-import json
 import shutil
 from pathlib import Path
 import numpy as np
-from shapely.geometry import Polygon
 from _harness import Harness
 from amw import checks,shapes
 from amw.io import atomic,read,sha,lock

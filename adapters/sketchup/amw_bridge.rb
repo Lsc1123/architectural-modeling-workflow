@@ -65,7 +65,7 @@ module AMW
 
     def self.camera_info(c)
       {eye: c.eye.to_a.map { |v| v*M }, target: c.target.to_a.map { |v| v*M },
-        up: c.up.to_a, perspective: c.perspective?, fov: c.fov,
+        up: c.up.to_a, perspective: c.perspective?, fov: c.perspective? ? c.fov : nil,
         height_m: c.perspective? ? nil : c.height*M}
     end
 
@@ -93,7 +93,7 @@ module AMW
         disk_sha = meta[:disk_sha]
       end
       {heartbeat_unix: Time.now.to_f, application: 'SketchUp', version: Sketchup.version,
-       bridge_version: '0.1.0', bridge_sha256: @bridge_code_sha,
+       bridge_version: '0.1.1', bridge_sha256: @bridge_code_sha,
        pid: Process.pid, document_id: meta[:id], path: model.path, title: model.title,
        modified: model.modified?, disk_sha256: disk_sha,
        external_disk_change: disk_sha != meta[:loaded_sha],
@@ -350,8 +350,7 @@ module AMW
       walk.call(model.entities, Geom::Transformation.new, ['root'], [], true, nil, nil)
       scenes = model.pages.map do |p|
         c = p.camera
-        {name: p.name, camera: {eye: c.eye.to_a.map { |v| v * M }, target: c.target.to_a.map { |v| v * M },
-          up: c.up.to_a, perspective: c.perspective?, fov: c.fov, height_m: c.perspective? ? nil : c.height * M},
+        {name: p.name, camera: camera_info(c),
          hidden_persistent_ids: (p.hidden_entities || []).select { |e| !p.get_drawingelement_visibility(e) }.map { |e| e.persistent_id.to_s },
          layer_visibility_overrides: (p.layers || []).map(&:name),
          stores_hidden_layers: p.use_hidden_layers?, stores_camera: p.use_camera?,

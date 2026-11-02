@@ -88,3 +88,9 @@ create/import 可赋 `semantic_id`，导入另有 `asset_id`；它们与 native 
 topology 按连通壳与实际嵌套方向核对，正总容积不能掩盖反向第三体；旧对象缺少 expect_solid 时保持 unverified。treads 核对起点、每级及到达面的支承和竖向净空、高差与级数，不认证连续步态。passage 包含保守端点/转角圆形包络。checks_run 报告保留实际输入参数；scope_diff 另核对实例、切面和场景索引。交接包保留项目修订快照。
 
 原生 export 同时写出实际纹理 PNG，记录工作区相对路径与 SHA；PNG 为原始像素，材质颜色和透明度另列。handoff 将这些文件一并复制并复核。写入前要求实际加载桥 SHA 与服务随包代码一致；更新后须保全并重启安装匹配的 RBZ。open 等到准确目标激活，不能当作重读；reopen 分事件循环关闭/打开并等待真正新文档事件。
+
+## 兼容性补充（2026-11-02）
+
+41个工具名、输入及结构化输出Schema保持不变。capture在原回执之外增加MCP ImageContent，供实际视觉检查；路径不代替看图。预期拒绝返回isError及原因，带请求ID时保留执行状态；快照未完成时另返回snapshot_operation，几何写入尚未提交。先查询该快照任务，解决后才恢复原客户端请求。
+
+报告Schema仍为1，新增可选check_type明确算法。旧topology报告按已有method识别；未知geometry报告保守按空间检查处理。空间继承比较全部导出环境，含新增邻接；无已认证影响边界时，远处变化也会要求重查。不同模型路径须在项目修订历史中明确属于同一唯一模型标签，否则要求分版重查。继承保留原scope和parameters，不能扩大通过范围。
